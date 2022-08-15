@@ -20,13 +20,13 @@ Please refer to [my Google scholar](https://scholar.google.com/citations?view_op
 
 7. **DaViT: Dual Attention Vision Transformers** <br>
    Mingyu Ding, Bin Xiao, Noel Codella, Ping Luo, Jingdong Wang, Lu Yuan <br>
-   European Conference on Computer Vision (**ECCV**) 2022
+   European Conference on Computer Vision (**ECCV**) 2022 <br>
 6. **Florence: A New Foundation Model for Computer Vision** <br>
    Lu Yuan, Dongdong Chen, Yi-Ling Chen, Noel Codella, Xiyang Dai, Jianfeng Gao, Houdong Hu, Xuedong Huang, Boxin Li, Chunyuan Li, Ce Liu, Mengchen Liu, Zicheng Liu, Yumao Lu, Yu Shi, Lijuan Wang, Jianfeng Wang, Bin Xiao, Zhen Xiao, Jianwei Yang, Michael Zeng, Luowei Zhou, Pengchuan Zhang <br>
    [[arXiv]](https://arxiv.org/pdf/2111.11432)
 5. **CvT: Introducing Convolutions to Vision Transformers** <br>
    Haiping Wu, Bin Xiao, Noel Codella, Mengchen Liu, Xiyang Dai, Lu Yuan, Lei Zhang <br>
-   International Conference on Computer Vision (**ICCV**) <br>
+   International Conference on Computer Vision (**ICCV**) 2021<br>
    [[Paper]](https://openaccess.thecvf.com/content/ICCV2021/papers/Wu_CvT_Introducing_Convolutions_to_Vision_Transformers_ICCV_2021_paper.pdf) [[Code]](https://github.com/microsoft/CvT)
 4. **Lite-hrnet: A lightweight high-resolution network** <br>
    Changqian Yu, Bin Xiao, Changxin Gao, Lu Yuan, Lei Zhang, Nong Sang, Jingdong Wang <br>
