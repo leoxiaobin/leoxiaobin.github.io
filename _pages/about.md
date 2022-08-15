@@ -48,6 +48,7 @@ Please refer to [my Google scholar](https://scholar.google.com/citations?view_op
    Ke Sun, Bin Xiao, Dong Liu, Jingdong Wang <br>
    Conference on Computer Vision and Pattern Recognition (**CVPR**), 2019 <br>
    [[Paper]](https://openaccess.thecvf.com/content_CVPR_2019/papers/Sun_Deep_High-Resolution_Representation_Learning_for_Human_Pose_Estimation_CVPR_2019_paper.pdf) [[Code]](https://github.com/leoxiaobin/deep-high-resolution-net.pytorch) [[Paper Digest Most Influential CVPR Papers]](https://www.paperdigest.org/2022/05/most-influential-cvpr-papers-2022-05/)
+   <div><iframe src="https://ghbtns.com/github-btn.html?user=leoxiaobin&repo=deep-high-resolution-net.pytorch&type=star&count=true" frameborder="0" scrolling="0" width="94px" height="20px"></iframe></div>
 2. **Integral human pose regression** <br>
    Xiao Sun, Bin Xiao, Fangyin Wei, Shuang Liang, Yichen Wei <br>
     European Conference on Computer Vision (**ECCV**), 2018 <br>
@@ -57,5 +58,3 @@ Please refer to [my Google scholar](https://scholar.google.com/citations?view_op
    European Conference on Computer Vision (**ECCV**), 2018 <br>
    [[Paper]](http://openaccess.thecvf.com/content_ECCV_2018/papers/Bin_Xiao_Simple_Baselines_for_ECCV_2018_paper.pdf) [[Code]](https://github.com/microsoft/human-pose-estimation.pytorch) [[Paper Digest Most Influential ECCV Papers]](https://www.paperdigest.org/2022/05/most-influential-eccv-papers-2022-05/)
 
-
-   <div><iframe src="https://ghbtns.com/github-btn.html?user=leoxiaobin&repo=deep-high-resolution-net.pytorch&type=star&count=true" frameborder="0" scrolling="0" width="94px" height="20px"></iframe></div>
