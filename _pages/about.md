@@ -27,7 +27,7 @@ Please refer to [my Google scholar](https://scholar.google.com/citations?view_op
 5. **CvT: Introducing Convolutions to Vision Transformers** <br>
    Haiping Wu, Bin Xiao, Noel Codella, Mengchen Liu, Xiyang Dai, Lu Yuan, Lei Zhang <br>
    International Conference on Computer Vision (**ICCV**), 2021<br>
-   [[Paper]](https://openaccess.thecvf.com/content/ICCV2021/papers/Wu_CvT_Introducing_Convolutions_to_Vision_Transformers_ICCV_2021_paper.pdf) [[Code]](https://github.com/microsoft/CvT)
+   [[Paper]](https://openaccess.thecvf.com/content/ICCV2021/papers/Wu_CvT_Introducing_Convolutions_to_Vision_Transformers_ICCV_2021_paper.pdf) [[Code]](https://github.com/microsoft/CvT) [[Paper Digest Most Influential ICCV Papers]](https://www.paperdigest.org/2022/05/most-influential-iccv-papers-2022-05/)
 4. **Lite-hrnet: A lightweight high-resolution network** <br>
    Changqian Yu, Bin Xiao, Changxin Gao, Lu Yuan, Lei Zhang, Nong Sang, Jingdong Wang <br>
    Conference on Computer Vision and Pattern Recognition (**CVPR**), 2021 <br>
@@ -39,8 +39,8 @@ Please refer to [my Google scholar](https://scholar.google.com/citations?view_op
 2. **Deep High-Resolution Representation Learning for Human Pose Estimation** <br>
    Ke Sun, Bin Xiao, Dong Liu, Jingdong Wang <br>
    Conference on Computer Vision and Pattern Recognition (**CVPR**), 2019 <br>
-   [[Paper]](https://openaccess.thecvf.com/content_CVPR_2019/papers/Sun_Deep_High-Resolution_Representation_Learning_for_Human_Pose_Estimation_CVPR_2019_paper.pdf) [[Code]](https://github.com/leoxiaobin/deep-high-resolution-net.pytorch)
+   [[Paper]](https://openaccess.thecvf.com/content_CVPR_2019/papers/Sun_Deep_High-Resolution_Representation_Learning_for_Human_Pose_Estimation_CVPR_2019_paper.pdf) [[Code]](https://github.com/leoxiaobin/deep-high-resolution-net.pytorch) <iframe src="https://ghbtns.com/github-btn.html?user=leoxiaobin&amp;repo=deep-high-resolution-net.pytorch&amp;type=star&amp;count=true" frameborder="0" scrolling="0" width="94px" height="20px"></iframe> [[Paper Digest Most Influential CVPR Papers]](https://www.paperdigest.org/2022/05/most-influential-cvpr-papers-2022-05/)
 1. **Simple baselines for human pose estimation and tracking** <br>
    Bin Xiao, Haiping Wu, Yichen Wei <br>
    European Conference on Computer Vision (**ECCV**), 2018 <br>
-   [[Paper]](http://openaccess.thecvf.com/content_ECCV_2018/papers/Bin_Xiao_Simple_Baselines_for_ECCV_2018_paper.pdf) [[Code]](https://github.com/microsoft/human-pose-estimation.pytorch)
+   [[Paper]](http://openaccess.thecvf.com/content_ECCV_2018/papers/Bin_Xiao_Simple_Baselines_for_ECCV_2018_paper.pdf) [[Code]](https://github.com/microsoft/human-pose-estimation.pytorch) [[Paper Digest Most Influential ECCV Papers]](https://www.paperdigest.org/2022/05/most-influential-eccv-papers-2022-05/)
