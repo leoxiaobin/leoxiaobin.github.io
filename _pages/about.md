@@ -36,11 +36,11 @@ Please refer to [my Google scholar](https://scholar.google.com/citations?view_op
    Bowen Cheng, Bin Xiao, Jingdong Wang, Honghui Shi, Thomas S Huang, Lei Zhang <br>
    Conference on Computer Vision and Pattern Recognition (**CVPR**), 2020 <br>
    [[Paper]](http://openaccess.thecvf.com/content_CVPR_2020/papers/Cheng_HigherHRNet_Scale-Aware_Representation_Learning_for_Bottom-Up_Human_Pose_Estimation_CVPR_2020_paper.pdf) [[Code]](https://github.com/HRNet/HigherHRNet-Human-Pose-Estimation)
-2. **Simple baselines for human pose estimation and tracking** <br>
-   Bin Xiao, Haiping Wu, Yichen Wei <br>
-   European Conference on Computer Vision (**ECCV**), 2018 <br>
-   [[Paper]](http://openaccess.thecvf.com/content_ECCV_2018/papers/Bin_Xiao_Simple_Baselines_for_ECCV_2018_paper.pdf) [[Code]](https://github.com/microsoft/human-pose-estimation.pytorch)
-1. **Deep High-Resolution Representation Learning for Human Pose Estimation** <br>
+2. **Deep High-Resolution Representation Learning for Human Pose Estimation** <br>
    Ke Sun, Bin Xiao, Dong Liu, Jingdong Wang <br>
    Conference on Computer Vision and Pattern Recognition (**CVPR**), 2019 <br>
    [[Paper]](https://openaccess.thecvf.com/content_CVPR_2019/papers/Sun_Deep_High-Resolution_Representation_Learning_for_Human_Pose_Estimation_CVPR_2019_paper.pdf) [[Code]](https://github.com/leoxiaobin/deep-high-resolution-net.pytorch)
+1. **Simple baselines for human pose estimation and tracking** <br>
+   Bin Xiao, Haiping Wu, Yichen Wei <br>
+   European Conference on Computer Vision (**ECCV**), 2018 <br>
+   [[Paper]](http://openaccess.thecvf.com/content_ECCV_2018/papers/Bin_Xiao_Simple_Baselines_for_ECCV_2018_paper.pdf) [[Code]](https://github.com/microsoft/human-pose-estimation.pytorch)
