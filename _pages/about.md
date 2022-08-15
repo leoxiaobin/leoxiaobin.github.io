@@ -32,17 +32,20 @@ Please refer to [my Google scholar](https://scholar.google.com/citations?view_op
    Haiping Wu, Bin Xiao, Noel Codella, Mengchen Liu, Xiyang Dai, Lu Yuan, Lei Zhang <br>
    International Conference on Computer Vision (**ICCV**), 2021<br>
    [[Paper]](https://openaccess.thecvf.com/content/ICCV2021/papers/Wu_CvT_Introducing_Convolutions_to_Vision_Transformers_ICCV_2021_paper.pdf) [[Code]](https://github.com/microsoft/CvT) [[Paper Digest Most Influential ICCV Papers]](https://www.paperdigest.org/2022/05/most-influential-iccv-papers-2022-05/)
+   <div><iframe src="https://ghbtns.com/github-btn.html?user=microsoft&repo=CvT&type=star&count=true" frameborder="0" scrolling="0" width="94px" height="20px"></iframe></div>
 4. **Lite-hrnet: A lightweight high-resolution network** <br>
    Changqian Yu, Bin Xiao, Changxin Gao, Lu Yuan, Lei Zhang, Nong Sang, Jingdong Wang <br>
    Conference on Computer Vision and Pattern Recognition (**CVPR**), 2021 <br>
    [[Paper]](http://openaccess.thecvf.com/content/CVPR2021/papers/Yu_Lite-HRNet_A_Lightweight_High-Resolution_Network_CVPR_2021_paper.pdf) [[Code]](https://github. com/HRNet/Lite-HRNet)
+   <div><iframe src="https://ghbtns.com/github-btn.html?user=HRNet&repo=Lite-HRNet&type=star&count=true" frameborder="0" scrolling="0" width="94px" height="20px"></iframe></div>
 3. **HigherHRNet: Scale-Aware Representation Learning for Bottom-Up Human Pose Estimation** <br>
    Bowen Cheng, Bin Xiao, Jingdong Wang, Honghui Shi, Thomas S Huang, Lei Zhang <br>
    Conference on Computer Vision and Pattern Recognition (**CVPR**), 2020 <br>
    [[Paper]](http://openaccess.thecvf.com/content_CVPR_2020/papers/Cheng_HigherHRNet_Scale-Aware_Representation_Learning_for_Bottom-Up_Human_Pose_Estimation_CVPR_2020_paper.pdf) [[Code]](https://github.com/HRNet/HigherHRNet-Human-Pose-Estimation)
+   <div><iframe src="https://ghbtns.com/github-btn.html?user=HRNet&repo=HigherHRNet-Human-Pose-Estimation&type=star&count=true" frameborder="0" scrolling="0" width="94px" height="20px"></iframe></div>
 3. **Deep High-Resolution Representation Learning for Visual Recognition** <br>
    Jingdong Wang, Ke Sun, Tianheng Cheng, Borui Jiang, Chaorui Deng, Yang Zhao, Dong Liu, Yadong Mu, Mingkui Tan, Xinggang Wang, Wenyu Liu, Bin Xiao <br>
-   IEEE Transactions on Pattern Analysis and Machine Intelligence (PAMI), 2020 <br>
+   IEEE Transactions on Pattern Analysis and Machine Intelligence (**PAMI**), 2020 <br>
    [[Paper]](https://arxiv.org/pdf/1908.07919)
 2. **Deep High-Resolution Representation Learning for Human Pose Estimation** <br>
    Ke Sun, Bin Xiao, Dong Liu, Jingdong Wang <br>
@@ -57,4 +60,5 @@ Please refer to [my Google scholar](https://scholar.google.com/citations?view_op
    Bin Xiao, Haiping Wu, Yichen Wei <br>
    European Conference on Computer Vision (**ECCV**), 2018 <br>
    [[Paper]](http://openaccess.thecvf.com/content_ECCV_2018/papers/Bin_Xiao_Simple_Baselines_for_ECCV_2018_paper.pdf) [[Code]](https://github.com/microsoft/human-pose-estimation.pytorch) [[Paper Digest Most Influential ECCV Papers]](https://www.paperdigest.org/2022/05/most-influential-eccv-papers-2022-05/)
+   <div><iframe src="https://ghbtns.com/github-btn.html?user=microsoft&repo=human-pose-estimation.pytorch&type=star&count=true" frameborder="0" scrolling="0" width="94px" height="20px"></iframe></div>
 
