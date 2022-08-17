@@ -72,5 +72,5 @@ Honors and Awards
 
 Professinonal Activities
 ======
-- Conference reviewers: CVPR, ICCV, ECCV, ICLR, and et.al. 
-- Journal reviewers: T-PAMI, T-MM, IJCV, and et.al.
+- Conference reviewer: CVPR, ICCV, ECCV, ICLR, and et.al. 
+- Journal reviewer: T-PAMI, T-MM, IJCV, and et.al.
