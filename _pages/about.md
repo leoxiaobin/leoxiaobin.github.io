@@ -1,7 +1,7 @@
 ---
 permalink: /
-title: "About me"
-excerpt: "About me"
+title: "Bin Xiao"
+excerpt: "Bin Xiao"
 author_profile: true
 redirect_from: 
   - /about/
