@@ -7,8 +7,8 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Bin Xiao"
-title_separator          : "Bin Xiao"
+title                    : "Homepage"
+title_separator          : " | "
 name                     : &name "Bin Xiao"
 description              : &description "Principal Researcher"
 url                      : https://leoxiaobin.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
