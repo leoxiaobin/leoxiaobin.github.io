@@ -16,7 +16,7 @@ Selected publications
 ======
 Please refer to [my Google scholar](https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=t5HZdzoAAAAJ) for a full list of my publications.
 
-8. **Florence-2: Advancing a Unified Representation for a Variety of Vision Tasks** <be>
+8. **Florence-2: Advancing a Unified Representation for a Variety of Vision Tasks** <br>
    Bin Xiao, Haiping Wu, Weijian Xu, Xiyang Dai, Houdong Hu, Yumao Lu, Michael Zeng, Ce Liu, Lu Yuan
    [[arXiv]](https://arxiv.org/pdf/2311.06242.pdf)
 
