@@ -17,9 +17,8 @@ Selected publications
 Please refer to [my Google scholar](https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=t5HZdzoAAAAJ) for a full list of my publications.
 
 8. **Florence-2: Advancing a Unified Representation for a Variety of Vision Tasks** <br>
-   Bin Xiao, Haiping Wu, Weijian Xu, Xiyang Dai, Houdong Hu, Yumao Lu, Michael Zeng, Ce Liu, Lu Yuan
+   Bin Xiao, Haiping Wu, Weijian Xu, Xiyang Dai, Houdong Hu, Yumao Lu, Michael Zeng, Ce Liu, Lu Yuan <br>
    [[arXiv]](https://arxiv.org/pdf/2311.06242.pdf)
-
 7. **DaViT: Dual Attention Vision Transformers** <br>
    Mingyu Ding, Bin Xiao, Noel Codella, Ping Luo, Jingdong Wang, Lu Yuan <br>
    European Conference on Computer Vision (**ECCV**), 2022 <br>
