@@ -8,15 +8,17 @@ redirect_from:
   - /about.html
 ---
 
-Bin Xiao is a Principal Researcher of Microsoft Azure Computer Vision Research Group. His research interests include computer vision and deep learning. His current research focuses on the large-scale foundational model pre-training in computer vision and image/text multi-modality learning. He builds the largest computer vision foundational models (Florence) at Microsoft. Many of his work has been transferred to Azure Cognitive Services.
+Bin Xiao is a Principal Researcher of Microsoft GenAI Group. His research interests include computer vision and deep learning. His current research focuses on the large-scale foundational model pre-training in computer vision and image/text multi-modality learning. He builds the largest computer vision foundational models (Florence) at Microsoft.
 
-News
-======
-[2022-08-07] Three papers are accepted by ECCV 2022. 
+
 
 Selected publications
 ======
 Please refer to [my Google scholar](https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=t5HZdzoAAAAJ) for a full list of my publications.
+
+8. **Florence-2: Advancing a Unified Representation for a Variety of Vision Tasks** <be>
+   Bin Xiao, Haiping Wu, Weijian Xu, Xiyang Dai, Houdong Hu, Yumao Lu, Michael Zeng, Ce Liu, Lu Yuan
+   [[arXiv]](https://arxiv.org/pdf/2311.06242.pdf)
 
 7. **DaViT: Dual Attention Vision Transformers** <br>
    Mingyu Ding, Bin Xiao, Noel Codella, Ping Luo, Jingdong Wang, Lu Yuan <br>
