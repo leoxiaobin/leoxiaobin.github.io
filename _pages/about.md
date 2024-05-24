@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-Bin Xiao is a Principal Researcher Manager of Microsoft GenAI Group. He is leading the multi-modality large language model development at Microsoft. His research interests include computer vision, deep learning and multimodality large language model. His representive works including [phi-3-vision](https://huggingface.co/microsoft/Phi-3-vision-128k-instruct), [Florence models](https://arxiv.org/abs/2311.06242), and [high-resolution network (HRNet)](https://github.com/HRNet). 
+Bin Xiao is a Principal Researcher Manager of Microsoft GenAI Group. He is leading the multi-modality large language model development at Microsoft. His research interests include computer vision, deep learning and multi-modality large language models. His representative works include [phi-3-vision](https://huggingface.co/microsoft/Phi-3-vision-128k-instruct), [Florence models](https://arxiv.org/abs/2311.06242), and [high-resolution network (HRNet)](https://github.com/HRNet). 
 
 
 
