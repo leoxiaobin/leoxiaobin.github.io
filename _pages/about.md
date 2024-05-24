@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-Bin Xiao is a Principal Researcher of Microsoft GenAI Group. His research interests include computer vision and deep learning. His current research focuses on the large-scale foundational model pre-training in computer vision and image/text multi-modality learning. He builds the largest computer vision foundational models (Florence) at Microsoft.
+Bin Xiao is a Principal Researcher Manager of Microsoft GenAI Group. He is leading the multi-modality large language model development at Microsoft. His research interests include computer vision, deep learning and multimodality large language model. His representive works including [phi-3-vision](https://huggingface.co/microsoft/Phi-3-vision-128k-instruct), [Florence models](https://arxiv.org/abs/2311.06242), and [high-resolution network (HRNet)](https://github.com/HRNet). 
 
 
 
@@ -18,7 +18,7 @@ Please refer to [my Google scholar](https://scholar.google.com/citations?view_op
 
 8. **Florence-2: Advancing a Unified Representation for a Variety of Vision Tasks** <br>
    Bin Xiao, Haiping Wu, Weijian Xu, Xiyang Dai, Houdong Hu, Yumao Lu, Michael Zeng, Ce Liu, Lu Yuan <br>
-   [[arXiv]](https://arxiv.org/pdf/2311.06242.pdf)
+   [[arXiv]](https://arxiv.org/pdf/2311.06242.pdf) <span style="color:red"> **Oral (CVPR 2024)** </span>
 7. **DaViT: Dual Attention Vision Transformers** <br>
    Mingyu Ding, Bin Xiao, Noel Codella, Ping Luo, Jingdong Wang, Lu Yuan <br>
    European Conference on Computer Vision (**ECCV**), 2022 <br>
