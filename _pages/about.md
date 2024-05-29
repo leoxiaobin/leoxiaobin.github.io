@@ -15,10 +15,12 @@ Bin Xiao is a Principal Research Manager of Microsoft GenAI Group. He is leading
 Selected publications
 ======
 Please refer to [my Google scholar](https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=t5HZdzoAAAAJ) for a full list of my publications.
-
+9. **Phi-3 Technical Report: A Highly Capable Language Model Locally on Your Phone** <br>
+   Microsoft GenAI team <br>
+   [[arXiv]](https://arxiv.org/abs/2404.14219) [[HuggingFace]](https://huggingface.co/microsoft/Phi-3-vision-128k-instruct)
 8. **Florence-2: Advancing a Unified Representation for a Variety of Vision Tasks** <br>
    Bin Xiao, Haiping Wu, Weijian Xu, Xiyang Dai, Houdong Hu, Yumao Lu, Michael Zeng, Ce Liu, Lu Yuan <br>
-   [[arXiv]](https://arxiv.org/pdf/2311.06242.pdf) <span style="color:red"> **Oral (CVPR 2024)** </span>
+   [[arXiv]](https://arxiv.org/pdf/2311.06242.pdf) <span style="color:red"> **CVPR 2024 (oral)** </span>
 7. **DaViT: Dual Attention Vision Transformers** <br>
    Mingyu Ding, Bin Xiao, Noel Codella, Ping Luo, Jingdong Wang, Lu Yuan <br>
    European Conference on Computer Vision (**ECCV**), 2022 <br>
