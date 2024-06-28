@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : ""
 title_separator          : ""
 name                     : &name "Bin Xiao"
-description              : &description "Principal Researcher"
+description              : &description "Principal Research Manager"
 url                      : https://leoxiaobin.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "leoxiaobin/leoxiaobin.github.io"
@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Bin Xiao"
   avatar           : "profile.png"
-  bio              : "Principal Researcher at Microsoft GenAI"
+  bio              : "Principal Research Manager at Microsoft GenAI"
   location         : "Redmond"
   employer         : Microsoft Cloud + AI
   pubmed           : # "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
