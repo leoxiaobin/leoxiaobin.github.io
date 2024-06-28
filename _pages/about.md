@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-Bin Xiao is a Principal Research Manager of Microsoft GenAI Group. He is leading the multi-modality large language model development at Microsoft. His research interests include computer vision, deep learning and multi-modality large language models. His representative works include [phi-3-vision](https://huggingface.co/microsoft/Phi-3-vision-128k-instruct), [Florence models](https://arxiv.org/abs/2311.06242), and [high-resolution network (HRNet)](https://github.com/HRNet). 
+Bin Xiao is a Principal Research Manager of Microsoft GenAI Group. He is leading the multi-modality large language model development at Microsoft. His research interests include computer vision, deep learning and multi-modality large language models. His representative works include [phi-3-vision](https://huggingface.co/microsoft/Phi-3-vision-128k-instruct), [Florence models](https://huggingface.co/collections/microsoft/florence-6669f44df0d87d9c3bfb76de), and [high-resolution network (HRNet)](https://github.com/HRNet). 
 
 
 
@@ -20,7 +20,7 @@ Please refer to [my Google scholar](https://scholar.google.com/citations?view_op
    [[arXiv]](https://arxiv.org/abs/2404.14219) [[HuggingFace]](https://huggingface.co/microsoft/Phi-3-vision-128k-instruct)
 8. **Florence-2: Advancing a Unified Representation for a Variety of Vision Tasks** <br>
    Bin Xiao, Haiping Wu, Weijian Xu, Xiyang Dai, Houdong Hu, Yumao Lu, Michael Zeng, Ce Liu, Lu Yuan <br>
-   [[arXiv]](https://arxiv.org/pdf/2311.06242.pdf) <span style="color:red"> **CVPR 2024 (oral)** </span> [[HuggingFace]](https://huggingface.co/microsoft/Florence-2-large)
+   [[arXiv]](https://arxiv.org/pdf/2311.06242.pdf) [[HuggingFace]](https://huggingface.co/microsoft/Florence-2-large) <span style="color:red"> **CVPR 2024 (oral)** </span> 
 2. **Deep High-Resolution Representation Learning for Human Pose Estimation** <br>
    Ke Sun, Bin Xiao, Dong Liu, Jingdong Wang <br>
    Conference on Computer Vision and Pattern Recognition (**CVPR**), 2019 <br>
