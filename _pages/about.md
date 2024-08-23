@@ -12,10 +12,10 @@ Bin Xiao is a Principal Research Manager of Microsoft GenAI Group. He is leading
 
 Research Highlights
 ======
-- **2024-present:** Leading [Phi-3-vision](https://huggingface.co/microsoft/Phi-3-vision-128k-instruct) project, developing one of the best multi-modal LLMs.
+- **2024-present:** Leading [Phi-3-vision](https://huggingface.co/microsoft/Phi-3-vision-128k-instruct) and [Phi-3.5-vision](https://huggingface.co/microsoft/Phi-3.5-vision-instruct) project, developing one of the best "small" multi-modal LLMs.
 - **2020-2023:** Led Florence project and co-authored [Florence-1](https://arxiv.org/pdf/2111.11432) / [Florence-2](https://arxiv.org/pdf/2311.06242.pdf); [Florence-2](https://arxiv.org/pdf/2311.06242.pdf) was accepted as an oral presentation at CVPR 2024 (90 of 2719 accepted papers).
-- **2021:** Co-authored [CvT](https://openaccess.thecvf.com/content/ICCV2021/papers/Wu_CvT_Introducing_Convolutions_to_Vision_Transformers_ICCV_2021_paper.pdf), one of the first hybrid transformer and CNN architectures; ranks [6th among the most cited papers in ICCV 2021](https://www.paperdigest.org/2023/09/most-influential-iccv-papers-2023-09/) **(Citations: 1,900+)**.
-- **2019-2020:** Co-authored [HRNet](https://arxiv.org/pdf/1908.07919), the first neural architecture backbone maintaining high-resolution representations for dense recognition tasks; ranks [4th among the most cited papers in CVPR 2019](https://www.paperdigest.org/2023/09/most-influential-cvpr-papers-2023-09/) **(Citations: 4,900+)**.
+- **2021:** Co-authored [CvT](https://openaccess.thecvf.com/content/ICCV2021/papers/Wu_CvT_Introducing_Convolutions_to_Vision_Transformers_ICCV_2021_paper.pdf), one of the first hybrid transformer and CNN architectures; ranks [6th among the most cited papers in ICCV 2021](https://www.paperdigest.org/2023/09/most-influential-iccv-papers-2023-09/) **(Citations: 2,000+)**.
+- **2019-2020:** Co-authored [HRNet](https://arxiv.org/pdf/1908.07919), the first neural architecture backbone maintaining high-resolution representations for dense recognition tasks; ranks [4th among the most cited papers in CVPR 2019](https://www.paperdigest.org/2023/09/most-influential-cvpr-papers-2023-09/) **(Citations: 5,000+)**.
 - **2018-2019:** Co-authored [SimpleBaseline](http://openaccess.thecvf.com/content_ECCV_2018/papers/Bin_Xiao_Simple_Baselines_for_ECCV_2018_paper.pdf), established the baseline for human pose estimation and tracking; ranks [12th among the most cited papers in ECCV 2018](https://www.paperdigest.org/2023/09/most-influential-eccv-papers-2023-09/) **(Citations: 2,100+)**.
 
 
