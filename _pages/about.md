@@ -8,11 +8,12 @@ redirect_from:
   - /about.html
 ---
 
-Bin Xiao is a Research Engineer of Meta GenAI team. He is working the multi-modality Llama model development at Meta. His research interests include computer vision, deep learning and multi-modality large language models. His representative works include [phi-3-vision](https://huggingface.co/microsoft/Phi-3-vision-128k-instruct), [Florence models](https://huggingface.co/collections/microsoft/florence-6669f44df0d87d9c3bfb76de), and [high-resolution network (HRNet)](https://github.com/HRNet). 
+Bin Xiao is a Member of Tech Staff of Microsoft AI team. My work spans vision–language training, large-scale data curation, and agentic model training. His representative works include [phi-3-vision](https://huggingface.co/microsoft/Phi-3-vision-128k-instruct), [Florence models](https://huggingface.co/collections/microsoft/florence-6669f44df0d87d9c3bfb76de), and [high-resolution network (HRNet)](https://github.com/HRNet). 
 
 Research Highlights
 ======
-- **2024-present** Multimodality LLama post-training
+- **2025-present** Reasoning, agentic, and coding model trainng.
+- **2024-2025** Multimodality LLama post-training.
 - **2024-2024:** Leading [Phi-3-vision](https://huggingface.co/microsoft/Phi-3-vision-128k-instruct) and [Phi-3.5-vision](https://huggingface.co/microsoft/Phi-3.5-vision-instruct) project, developing one of the best "small" multi-modal LLMs.
 - **2020-2023:** Led Florence project and co-authored [Florence-1](https://arxiv.org/pdf/2111.11432) / [Florence-2](https://arxiv.org/pdf/2311.06242.pdf); [Florence-2](https://arxiv.org/pdf/2311.06242.pdf) was accepted as an oral presentation at CVPR 2024 (90 of 2719 accepted papers).
 - **2021:** Co-authored [CvT](https://openaccess.thecvf.com/content/ICCV2021/papers/Wu_CvT_Introducing_Convolutions_to_Vision_Transformers_ICCV_2021_paper.pdf), one of the first hybrid transformer and CNN architectures; ranks [6th among the most cited papers in ICCV 2021](https://www.paperdigest.org/2023/09/most-influential-iccv-papers-2023-09/) **(Citations: 2,000+)**.
