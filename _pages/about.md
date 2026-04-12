@@ -17,9 +17,9 @@ redirect_from:
     <div class="research-home__container research-home__hero-inner">
       <div class="research-home__copy">
         <h1 class="research-home__brand">Bin Xiao</h1>
-        <p class="research-home__headline">Multimodal and agentic AI research for systems people can actually use.</p>
+        <p class="research-home__headline">Multimodal systems, visual intelligence, and agentic model training.</p>
         <p class="research-home__support">
-          Member of Tech Staff at Microsoft AI, building compact multimodal and agentic systems with representative work across Phi-3 Vision, Florence, CvT, and HRNet.
+          Member of Technical Staff at Microsoft AI. Recent work includes Phi-3 Vision, Florence, CvT, and HRNet.
         </p>
         <div class="research-home__actions">
           <a class="research-home__button research-home__button--primary" href="#selected-work">Selected publications</a>
@@ -29,21 +29,41 @@ redirect_from:
     </div>
   </header>
 
+  <section class="research-home__section research-home__section--program" id="program">
+    <div class="research-home__container research-home__program-grid">
+      <div class="research-home__section-heading research-home__section-heading--compact">
+        <h2>Research Program</h2>
+        <p>Research centered on compact multimodal systems, large-scale data curation, and agentic training that can move from paper into product.</p>
+      </div>
+
+      <ul class="program-list">
+        <li>
+          <h3>Vision-language training</h3>
+          <p>Small multimodal models designed for strong perception, grounding, and practical reasoning.</p>
+        </li>
+        <li>
+          <h3>Data curation at scale</h3>
+          <p>Training data pipelines that improve model quality, breadth, and reliability across tasks.</p>
+        </li>
+        <li>
+          <h3>Agentic and coding models</h3>
+          <p>Post-training methods for reasoning, action, and tool-using systems that operate in real workflows.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
   <section class="research-home__section research-home__section--paper" id="trajectory">
     <div class="research-home__container">
       <div class="research-home__section-heading">
         <h2>Research Highlights</h2>
-        <p>Selected milestones across reasoning and coding models, multimodal post-training, and dense vision systems.</p>
+        <p>Selected milestones across recent multimodal post-training, reasoning, and dense vision research.</p>
       </div>
 
       <ol class="trajectory-list">
         <li>
           <span class="trajectory-list__year">2025–present</span>
           <p>Reasoning, agentic, and coding model training.</p>
-        </li>
-        <li>
-          <span class="trajectory-list__year">2024–2025</span>
-          <p>Multimodal Llama post-training.</p>
         </li>
         <li>
           <span class="trajectory-list__year">2024</span>
@@ -72,38 +92,26 @@ redirect_from:
         <article class="publication-list__item">
           <p class="publication-list__meta">2024 · Technical report · multimodal LLM</p>
           <h3>Phi-3 Technical Report: A Highly Capable Language Model Locally on Your Phone</h3>
-          <p>Part of the Phi-3 effort to make compact models practical on-device, including strong multimodal capability.</p>
+          <p>Compact multimodal capability designed to bring strong language and vision performance onto everyday devices.</p>
           <p class="publication-list__links"><a href="https://arxiv.org/abs/2404.14219" target="_blank" rel="noopener">Paper</a><a href="https://huggingface.co/microsoft/Phi-3-vision-128k-instruct" target="_blank" rel="noopener">Model</a></p>
         </article>
 
         <article class="publication-list__item">
           <p class="publication-list__meta">2024 · CVPR oral · unified vision model</p>
           <h3>Florence-2: Advancing a Unified Representation for a Variety of Vision Tasks</h3>
-          <p>A unified representation model that spans captioning, OCR, grounding, segmentation, and open-ended vision-language tasks.</p>
+          <p>A unified representation for captioning, OCR, grounding, segmentation, and open-ended vision-language tasks.</p>
           <p class="publication-list__links"><a href="https://arxiv.org/pdf/2311.06242.pdf" target="_blank" rel="noopener">Paper</a><a href="https://huggingface.co/microsoft/Florence-2-large" target="_blank" rel="noopener">Model</a></p>
-        </article>
-
-        <article class="publication-list__item">
-          <p class="publication-list__meta">2021 · ICCV · transformer backbone</p>
-          <h3>CvT: Introducing Convolutions to Vision Transformers</h3>
-          <p>One of the early hybrid CNN-transformer architectures, later becoming one of the most cited ICCV 2021 papers.</p>
-          <p class="publication-list__links"><a href="https://openaccess.thecvf.com/content/ICCV2021/papers/Wu_CvT_Introducing_Convolutions_to_Vision_Transformers_ICCV_2021_paper.pdf" target="_blank" rel="noopener">Paper</a><a href="https://github.com/microsoft/CvT" target="_blank" rel="noopener">Code</a></p>
         </article>
 
         <article class="publication-list__item">
           <p class="publication-list__meta">2019 · CVPR · dense prediction backbone</p>
           <h3>Deep High-Resolution Representation Learning for Human Pose Estimation</h3>
-          <p>Introduced the HRNet family, maintaining high-resolution representations throughout the backbone for dense recognition tasks.</p>
+          <p>The HRNet family introduced a high-resolution backbone that became a durable reference point for dense vision tasks.</p>
           <p class="publication-list__links"><a href="https://openaccess.thecvf.com/content_CVPR_2019/papers/Sun_Deep_High-Resolution_Representation_Learning_for_Human_Pose_Estimation_CVPR_2019_paper.pdf" target="_blank" rel="noopener">Paper</a><a href="https://github.com/leoxiaobin/deep-high-resolution-net.pytorch" target="_blank" rel="noopener">Code</a></p>
         </article>
-
-        <article class="publication-list__item">
-          <p class="publication-list__meta">2018 · ECCV · pose estimation baseline</p>
-          <h3>Simple Baselines for Human Pose Estimation and Tracking</h3>
-          <p>A straightforward, high-performing baseline that became a durable reference point for pose estimation and tracking.</p>
-          <p class="publication-list__links"><a href="http://openaccess.thecvf.com/content_ECCV_2018/papers/Bin_Xiao_Simple_Baselines_for_ECCV_2018_paper.pdf" target="_blank" rel="noopener">Paper</a><a href="https://github.com/microsoft/human-pose-estimation.pytorch" target="_blank" rel="noopener">Code</a></p>
-        </article>
       </div>
+
+      <p class="research-home__more-link"><a href="https://scholar.google.com/citations?view_op=list_works&hl=en&user=t5HZdzoAAAAJ" target="_blank" rel="noopener">View full publication list</a></p>
     </div>
   </section>
 
@@ -118,11 +126,7 @@ redirect_from:
         <li>Florence-2 was accepted as a CVPR 2024 oral presentation.</li>
         <li>HRNet ranks among the most cited CVPR 2019 papers, with more than 5,000 citations.</li>
         <li>CvT ranks among the most cited ICCV 2021 papers, with more than 2,000 citations.</li>
-        <li>SimpleBaseline ranks among the most cited ECCV 2018 papers, with more than 2,100 citations.</li>
-        <li>1st place in Look into Person Challenge 2019: Single-Person Human Pose Estimation Track.</li>
-        <li>2nd place in Object365 Challenge 2019: Full track.</li>
-        <li>1st place in PoseTrack Multi-Person Pose Tracking Challenge 2018.</li>
-        <li>2nd place in COCO Keypoint Detection Challenge 2018.</li>
+        <li>1st place in Look into Person Challenge 2019 and PoseTrack Multi-Person Pose Tracking Challenge 2018.</li>
       </ul>
     </div>
   </section>
@@ -140,7 +144,7 @@ redirect_from:
       </div>
 
       <p class="research-home__outbound">
-        Elsewhere:
+        Further reading:
         <a href="https://github.com/leoxiaobin" target="_blank" rel="noopener">GitHub</a>
         <span>·</span>
         <a href="https://scholar.google.com/citations?user=t5HZdzoAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
