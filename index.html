@@ -226,6 +226,33 @@
       padding-top: 0.2rem;
     }
 
+    /* ── Hero ── */
+    .hero-name {
+      font-family: var(--serif);
+      font-size: clamp(2rem, 4vw, 2.8rem);
+      font-weight: 500;
+      color: var(--near-black);
+      letter-spacing: -0.02em;
+      line-height: 1.15;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero-tagline {
+      font-family: var(--mono);
+      font-size: 0.72rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--brand);
+      margin-bottom: 0.3rem;
+    }
+
+    .hero-role {
+      font-family: var(--serif);
+      font-size: 0.92rem;
+      color: var(--stone);
+      line-height: 1.5;
+    }
+
     /* ── About ── */
     .about-intro {
       font-family: var(--serif);
@@ -256,51 +283,31 @@
 
     .scholar-cta:hover { color: var(--brand-light); border-color: var(--brand-light); }
 
-    .about-cols {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 2.5rem;
-      margin-top: 1.5rem;
-    }
+    /* ── Research Focus ── */
+    .focus-list { list-style: none; }
 
-    .about-col-label {
-      font-family: var(--serif);
-      font-size: 0.8rem;
-      font-weight: 500;
-      letter-spacing: 0.02em;
-      color: var(--brand);
-      margin-bottom: 0.75rem;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      font-family: var(--mono);
-      font-size: 0.62rem;
-    }
-
-    .about-list { list-style: none; }
-
-    .about-list li {
-      display: flex;
-      align-items: flex-start;
-      gap: 0.6rem;
-      font-size: 0.9rem;
-      color: var(--olive);
-      padding: 0.5rem 0;
+    .focus-item {
+      padding: 1rem 0;
       border-bottom: 1px solid var(--border-soft);
-      line-height: 1.5;
     }
 
-    .about-list li:last-child { border-bottom: none; }
+    .focus-item:last-child { border-bottom: none; }
 
-    .about-list li::before {
-      content: '—';
-      color: var(--brand);
-      flex-shrink: 0;
-      font-size: 0.75rem;
-      margin-top: 0.12rem;
+    .focus-title {
+      display: block;
+      font-family: var(--serif);
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: var(--near-black);
+      margin-bottom: 0.3rem;
     }
 
-    .about-list a { color: var(--dark-warm); border-bottom: 1px solid var(--border-soft); }
-    .about-list a:hover { color: var(--brand); border-color: var(--brand); }
+    .focus-desc {
+      display: block;
+      font-size: 0.88rem;
+      color: var(--olive);
+      line-height: 1.55;
+    }
 
     /* ── Trajectory ── */
     .trajectory-list { list-style: none; }
@@ -580,8 +587,6 @@
 
       .main { padding: 2rem 1.5rem; padding-top: 3.5rem; }
 
-      .about-cols { grid-template-columns: 1fr; gap: 1.5rem; }
-
       .trajectory-item { grid-template-columns: 1fr; gap: 0.25rem; }
       .pub-item { grid-template-columns: 1fr; }
       .pub-num { display: none; }
@@ -625,17 +630,17 @@
     <div>
       <div class="sidebar-section-label" style="margin-bottom:0.6rem;">Navigate</div>
       <nav class="sidebar-nav">
-        <a href="#about">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
-          About
+        <a href="#focus">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><circle cx="12" cy="12" r="8"/><line x1="12" y1="2" x2="12" y2="4"/><line x1="12" y1="20" x2="12" y2="22"/></svg>
+          Research Focus
+        </a>
+        <a href="#work">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
+          Selected Work
         </a>
         <a href="#trajectory">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
           Trajectory
-        </a>
-        <a href="#publications">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
-          Publications
         </a>
         <a href="#recognition">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
@@ -665,10 +670,6 @@
           <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zM7.369 4.378c.525 0 .947.431.947.947s-.422.947-.947.947a.95.95 0 01-.947-.947c0-.525.422-.947.947-.947zm-.722 3.038h1.444v10.041H6.647V7.416zm3.562 0h3.9c3.712 0 5.344 2.653 5.344 5.025 0 2.578-2.016 5.016-5.325 5.016h-3.919V7.416zm1.444 1.303v7.444h2.297c3.272 0 3.872-2.484 3.872-3.722 0-2.016-1.284-3.722-3.872-3.722h-2.297z"/></svg>
           ORCID
         </a>
-        <a class="social-link" href="https://leoxiaobin.github.io" target="_blank" rel="noopener">
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
-          Website
-        </a>
       </div>
     </div>
 
@@ -677,102 +678,58 @@
   <!-- ── MAIN ── -->
   <main class="main">
 
-    <!-- About -->
-    <section class="section" id="about">
-      <div class="section-header reveal">
-        <h2>About</h2>
-        <span class="section-counter">Microsoft AI</span>
-      </div>
+    <!-- Hero -->
+    <section class="section" id="hero" style="margin-bottom:3rem;">
+      <h1 class="hero-name reveal">Bin Xiao</h1>
+      <p class="hero-tagline reveal">AI Researcher · Multimodal Foundation Models · Agentic AI</p>
+      <p class="hero-role reveal">Member of Technical Staff, Microsoft AI · Redmond, WA</p>
 
-      <p class="about-intro reveal">
-        I am a <strong>Member of Technical Staff at Microsoft AI</strong>, based in Redmond, WA,
-        building <strong>multimodal and agentic AI systems</strong> that people can actually use.
+      <p class="about-intro reveal" style="margin-top:1.5rem;">
+        I build foundation models for vision, multimodal understanding, and agentic AI — with a focus on turning research systems into widely used models and products.
         Representative work includes
+        <a href="https://huggingface.co/collections/microsoft/florence-6669f44df0d87d9c3bfb76de" target="_blank" rel="noopener">Florence-2</a>,
         <a href="https://huggingface.co/microsoft/Phi-3-vision-128k-instruct" target="_blank" rel="noopener">Phi-3 Vision</a>,
-        <a href="https://huggingface.co/collections/microsoft/florence-6669f44df0d87d9c3bfb76de" target="_blank" rel="noopener">Florence</a>,
-        <a href="https://openaccess.thecvf.com/content/ICCV2021/papers/Wu_CvT_Introducing_Convolutions_to_Vision_Transformers_ICCV_2021_paper.pdf" target="_blank" rel="noopener">CvT</a>, and
-        <a href="https://github.com/HRNet" target="_blank" rel="noopener">HRNet</a>.
+        <a href="https://openaccess.thecvf.com/content/ICCV2021/papers/Wu_CvT_Introducing_Convolutions_to_Vision_Transformers_ICCV_2021_paper.pdf" target="_blank" rel="noopener">CvT</a>,
+        <a href="https://github.com/HRNet" target="_blank" rel="noopener">HRNet</a>, and
+        <a href="https://github.com/microsoft/human-pose-estimation.pytorch" target="_blank" rel="noopener">SimpleBaseline</a>.
       </p>
 
       <a class="scholar-cta reveal" href="https://scholar.google.com/citations?view_op=list_works&hl=en&user=t5HZdzoAAAAJ" target="_blank" rel="noopener">
         <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 24a7 7 0 110-14 7 7 0 010 14zm0-24L0 9.5l4.838 3.94A8 8 0 0112 9a8 8 0 017.162 4.44L24 9.5z"/></svg>
-        View Google Scholar Profile →
+        Google Scholar Profile →
       </a>
-
-      <div class="about-cols reveal">
-        <div>
-          <p class="about-col-label">Research Interests</p>
-          <ul class="about-list">
-            <li>Multimodal &amp; Agentic AI</li>
-            <li>Neural Architecture</li>
-            <li>Vision-Language Models</li>
-            <li>Pose Estimation &amp; Dense Prediction</li>
-            <li>Reasoning &amp; Coding Models</li>
-          </ul>
-        </div>
-        <div>
-          <p class="about-col-label">Key Projects</p>
-          <ul class="about-list">
-            <li><a href="https://huggingface.co/microsoft/Phi-3-vision-128k-instruct" target="_blank" rel="noopener">Phi-3 Vision &amp; Phi-3.5 Vision</a></li>
-            <li><a href="https://github.com/microsoft/CvT" target="_blank" rel="noopener">CvT</a> &amp; <a href="https://github.com/leoxiaobin/deep-high-resolution-net.pytorch" target="_blank" rel="noopener">HRNet</a></li>
-            <li><a href="https://huggingface.co/collections/microsoft/florence-6669f44df0d87d9c3bfb76de" target="_blank" rel="noopener">Florence-1 &amp; Florence-2</a></li>
-            <li><a href="https://github.com/microsoft/human-pose-estimation.pytorch" target="_blank" rel="noopener">SimpleBaseline</a> &amp; <a href="https://github.com/leoxiaobin/deep-high-resolution-net.pytorch" target="_blank" rel="noopener">HRNet</a> &amp; <a href="https://github.com/HRNet/HigherHRNet-Human-Pose-Estimation" target="_blank" rel="noopener">HigherHRNet</a></li>
-            <li><a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-ai/" target="_blank" rel="noopener">Microsoft Superintelligence</a></li>
-          </ul>
-        </div>
-      </div>
     </section>
 
-    <!-- Trajectory -->
-    <section class="section" id="trajectory">
+    <!-- Research Focus -->
+    <section class="section" id="focus">
       <div class="section-header reveal">
-        <h2>Trajectory</h2>
-        <span class="section-counter">2018 – present</span>
+        <h2>Research Focus</h2>
       </div>
 
-      <ol class="trajectory-list reveal-stagger" reversed>
-        <li class="trajectory-item">
-          <span class="trajectory-year">2025 – present</span>
-          <p class="trajectory-desc">Reasoning, agentic, and coding model training.</p>
+      <ul class="focus-list reveal-stagger">
+        <li class="focus-item">
+          <span class="focus-title">Multimodal foundation models</span>
+          <span class="focus-desc">Building general-purpose vision-language models for OCR, grounding, captioning, dense prediction, and document/image understanding.</span>
         </li>
-        <li class="trajectory-item">
-          <span class="trajectory-year">2024 – 2025</span>
-          <p class="trajectory-desc">Multimodal Llama post-training.</p>
+        <li class="focus-item">
+          <span class="focus-title">Efficient and deployable AI</span>
+          <span class="focus-desc">Designing compact and practical models that can run in real-world product settings, including low-latency and resource-constrained scenarios.</span>
         </li>
-        <li class="trajectory-item">
-          <span class="trajectory-year">2024</span>
-          <p class="trajectory-desc">
-            Led <a href="https://huggingface.co/microsoft/Phi-3-vision-128k-instruct" target="_blank" rel="noopener">Phi-3 Vision</a>
-            and <a href="https://huggingface.co/microsoft/Phi-3.5-vision-instruct" target="_blank" rel="noopener">Phi-3.5 Vision</a>,
-            defining a strong generation of compact multimodal LLMs.
-          </p>
+        <li class="focus-item">
+          <span class="focus-title">Vision representation learning</span>
+          <span class="focus-desc">From high-resolution CNNs to convolutional vision transformers to unified multimodal representations.</span>
         </li>
-        <li class="trajectory-item">
-          <span class="trajectory-year">2020 – 2023</span>
-          <p class="trajectory-desc">
-            Led and co-authored the
-            <a href="https://arxiv.org/pdf/2111.11432" target="_blank" rel="noopener">Florence-1</a>
-            and <a href="https://arxiv.org/pdf/2311.06242.pdf" target="_blank" rel="noopener">Florence-2</a> projects.
-            Florence-2 selected as a <strong>CVPR 2024 oral</strong> presentation.
-          </p>
+        <li class="focus-item">
+          <span class="focus-title">Agentic and reasoning systems</span>
+          <span class="focus-desc">Post-training models for tool use, coding, reasoning, and real-world task completion.</span>
         </li>
-        <li class="trajectory-item">
-          <span class="trajectory-year">2018 – 2021</span>
-          <p class="trajectory-desc">
-            Led and co-authored
-            <a href="https://openaccess.thecvf.com/content/ICCV2021/papers/Wu_CvT_Introducing_Convolutions_to_Vision_Transformers_ICCV_2021_paper.pdf" target="_blank" rel="noopener">CvT</a>,
-            <a href="https://arxiv.org/pdf/1908.07919" target="_blank" rel="noopener">HRNet</a>, and
-            <a href="http://openaccess.thecvf.com/content_ECCV_2018/papers/Bin_Xiao_Simple_Baselines_for_ECCV_2018_paper.pdf" target="_blank" rel="noopener">SimpleBaseline</a> —
-            three durable reference points in vision research.
-          </p>
-        </li>
-      </ol>
+      </ul>
     </section>
 
-    <!-- Publications -->
-    <section class="section" id="publications">
+    <!-- Selected Work -->
+    <section class="section" id="work">
       <div class="section-header reveal">
-        <h2>Selected Publications</h2>
+        <h2>Selected Work</h2>
         <span class="section-counter">5 papers</span>
       </div>
 
@@ -783,7 +740,7 @@
           <div>
             <p class="pub-meta">2024 · Technical Report<span class="pub-badge">Multimodal LLM</span></p>
             <h3 class="pub-title"><a href="https://arxiv.org/abs/2404.14219" target="_blank" rel="noopener">Phi-3 Technical Report: A Highly Capable Language Model Locally on Your Phone</a></h3>
-            <p class="pub-desc">Compact models practical on-device, including strong multimodal capability through Phi-3 Vision and Phi-3.5 Vision.</p>
+            <p class="pub-desc">Compact multimodal language models for visual reasoning and OCR-centric understanding. Phi-3 Vision and Phi-3.5 Vision demonstrated that practical on-device multimodal capability is achievable without sacrificing quality.</p>
             <div class="pub-links">
               <a class="pub-link" href="https://arxiv.org/abs/2404.14219" target="_blank" rel="noopener">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
@@ -802,7 +759,7 @@
           <div>
             <p class="pub-meta">2024 · CVPR<span class="pub-badge">Oral</span><span class="pub-badge">27M+ downloads</span></p>
             <h3 class="pub-title"><a href="https://arxiv.org/pdf/2311.06242.pdf" target="_blank" rel="noopener">Florence-2: Advancing a Unified Representation for a Variety of Vision Tasks</a></h3>
-            <p class="pub-desc">A unified model spanning captioning, OCR, grounding, and segmentation — one architecture, many tasks.</p>
+            <p class="pub-desc">A unified prompt-based vision foundation model spanning captioning, OCR, grounding, and segmentation — one architecture handling many vision tasks through a single sequence-to-sequence formulation.</p>
             <div class="pub-links">
               <a class="pub-link" href="https://arxiv.org/pdf/2311.06242.pdf" target="_blank" rel="noopener">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
@@ -821,7 +778,7 @@
           <div>
             <p class="pub-meta">ICCV 2021<span class="pub-badge">3000+ citations</span><a class="pub-badge" href="https://www.paperdigest.org/2026/03/most-influential-iccv-papers-2026-03-version/" target="_blank" rel="noopener">Most cited ICCV 2021</a></p>
             <h3 class="pub-title"><a href="https://openaccess.thecvf.com/content/ICCV2021/papers/Wu_CvT_Introducing_Convolutions_to_Vision_Transformers_ICCV_2021_paper.pdf" target="_blank" rel="noopener">CvT: Introducing Convolutions to Vision Transformers</a></h3>
-            <p class="pub-desc">An early hybrid CNN-transformer architecture. Among the most cited ICCV 2021 papers.</p>
+            <p class="pub-desc">Introduced convolutional inductive biases into vision transformers for efficient visual recognition — bridging the strengths of CNNs and transformers in a single architecture.</p>
             <div class="pub-links">
               <a class="pub-link" href="https://openaccess.thecvf.com/content/ICCV2021/papers/Wu_CvT_Introducing_Convolutions_to_Vision_Transformers_ICCV_2021_paper.pdf" target="_blank" rel="noopener">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
@@ -840,7 +797,7 @@
           <div>
             <p class="pub-meta">CVPR 2019<span class="pub-badge">7000+ citations</span><a class="pub-badge" href="https://www.paperdigest.org/2026/03/most-influential-cvpr-papers-2026-03-version/" target="_blank" rel="noopener">Most cited CVPR 2019</a></p>
             <h3 class="pub-title"><a href="https://openaccess.thecvf.com/content_CVPR_2019/papers/Sun_Deep_High-Resolution_Representation_Learning_for_Human_Pose_Estimation_CVPR_2019_paper.pdf" target="_blank" rel="noopener">Deep High-Resolution Representation Learning for Human Pose Estimation</a></h3>
-            <p class="pub-desc">The HRNet family — high-resolution representations maintained throughout for dense recognition. Among the most cited CVPR 2019 papers.</p>
+            <p class="pub-desc">Maintained high-resolution representations throughout the network, becoming a durable architecture family for pose estimation and dense visual recognition.</p>
             <div class="pub-links">
               <a class="pub-link" href="https://openaccess.thecvf.com/content_CVPR_2019/papers/Sun_Deep_High-Resolution_Representation_Learning_for_Human_Pose_Estimation_CVPR_2019_paper.pdf" target="_blank" rel="noopener">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
@@ -859,7 +816,7 @@
           <div>
             <p class="pub-meta">ECCV 2018<span class="pub-badge">2900+ citations</span><a class="pub-badge" href="https://www.paperdigest.org/2026/03/most-influential-eccv-papers-2026-03-version/" target="_blank" rel="noopener">Most cited ECCV 2018</a></p>
             <h3 class="pub-title"><a href="http://openaccess.thecvf.com/content_ECCV_2018/papers/Bin_Xiao_Simple_Baselines_for_ECCV_2018_paper.pdf" target="_blank" rel="noopener">Simple Baselines for Human Pose Estimation and Tracking</a></h3>
-            <p class="pub-desc">A high-performing baseline that became a durable reference for pose estimation and tracking research. Among the most cited ECCV 2018 papers.</p>
+            <p class="pub-desc">Showed that a simple, carefully designed deconvolutional head could deliver strong human pose estimation performance — becoming a durable reference baseline for the field.</p>
             <div class="pub-links">
               <a class="pub-link" href="http://openaccess.thecvf.com/content_ECCV_2018/papers/Bin_Xiao_Simple_Baselines_for_ECCV_2018_paper.pdf" target="_blank" rel="noopener">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
@@ -876,21 +833,67 @@
       </ol>
     </section>
 
+    <!-- Research Trajectory -->
+    <section class="section" id="trajectory">
+      <div class="section-header reveal">
+        <h2>Research Trajectory</h2>
+        <span class="section-counter">2018 – present</span>
+      </div>
+
+      <ol class="trajectory-list reveal-stagger" reversed>
+        <li class="trajectory-item">
+          <span class="trajectory-year">2025 – present</span>
+          <p class="trajectory-desc">Reasoning, coding, and agentic model post-training — building models that can plan, use tools, and complete real-world tasks.</p>
+        </li>
+        <li class="trajectory-item">
+          <span class="trajectory-year">2024 – 2025</span>
+          <p class="trajectory-desc">Multimodal Llama post-training — extending large language models with visual understanding capabilities.</p>
+        </li>
+        <li class="trajectory-item">
+          <span class="trajectory-year">2024</span>
+          <p class="trajectory-desc">
+            Led <a href="https://huggingface.co/microsoft/Phi-3-vision-128k-instruct" target="_blank" rel="noopener">Phi-3 Vision</a>
+            and <a href="https://huggingface.co/microsoft/Phi-3.5-vision-instruct" target="_blank" rel="noopener">Phi-3.5 Vision</a> — compact multimodal LLMs that brought strong visual reasoning to resource-constrained settings.
+          </p>
+        </li>
+        <li class="trajectory-item">
+          <span class="trajectory-year">2020 – 2023</span>
+          <p class="trajectory-desc">
+            Led the
+            <a href="https://arxiv.org/pdf/2111.11432" target="_blank" rel="noopener">Florence-1</a>
+            and <a href="https://arxiv.org/pdf/2311.06242.pdf" target="_blank" rel="noopener">Florence-2</a> vision foundation models — unifying captioning, OCR, grounding, and segmentation in a single sequence-to-sequence architecture.
+          </p>
+        </li>
+        <li class="trajectory-item">
+          <span class="trajectory-year">2018 – 2021</span>
+          <p class="trajectory-desc">
+            Built durable vision architectures and baselines:
+            <a href="https://openaccess.thecvf.com/content/ICCV2021/papers/Wu_CvT_Introducing_Convolutions_to_Vision_Transformers_ICCV_2021_paper.pdf" target="_blank" rel="noopener">CvT</a> (convolutional vision transformers),
+            <a href="https://arxiv.org/pdf/1908.07919" target="_blank" rel="noopener">HRNet</a> (high-resolution representations), and
+            <a href="http://openaccess.thecvf.com/content_ECCV_2018/papers/Bin_Xiao_Simple_Baselines_for_ECCV_2018_paper.pdf" target="_blank" rel="noopener">SimpleBaseline</a> (pose estimation reference).
+          </p>
+        </li>
+      </ol>
+    </section>
+
     <!-- Recognition -->
     <section class="section" id="recognition">
       <div class="section-header reveal">
         <h2>Recognition</h2>
-        <span class="section-counter">4 highlights</span>
       </div>
 
       <ul class="recognition-list reveal-stagger">
         <li class="recognition-item">
           <span class="recognition-dot" aria-hidden="true"></span>
-          <span><strong>1st place</strong> — Look into Person Challenge 2019, Single-Person Pose Estimation Track.</span>
+          <span>Florence-2 accepted as a <strong>CVPR 2024 oral</strong> presentation.</span>
         </li>
         <li class="recognition-item">
           <span class="recognition-dot" aria-hidden="true"></span>
-          <span><strong>2nd place</strong> — Object365 Challenge 2019, Full track.</span>
+          <span>HRNet, CvT, and SimpleBaseline — among the most cited papers at CVPR 2019, ICCV 2021, and ECCV 2018, with <strong>12,000+ combined citations</strong>.</span>
+        </li>
+        <li class="recognition-item">
+          <span class="recognition-dot" aria-hidden="true"></span>
+          <span><strong>1st place</strong> — Look into Person Challenge 2019, Single-Person Pose Estimation.</span>
         </li>
         <li class="recognition-item">
           <span class="recognition-dot" aria-hidden="true"></span>
@@ -907,7 +910,6 @@
     <section class="section" id="contact">
       <div class="section-header reveal">
         <h2>Contact</h2>
-        <span class="section-counter">Links</span>
       </div>
 
       <div class="contact-rows reveal-stagger">
@@ -927,12 +929,6 @@
           <span class="contact-label">ORCID</span>
           <div class="contact-val">
             <a href="https://orcid.org/0000-0001-6477-5911" target="_blank" rel="noopener">0000-0001-6477-5911 →</a>
-          </div>
-        </div>
-        <div class="contact-row">
-          <span class="contact-label">Web</span>
-          <div class="contact-val">
-            <a href="https://leoxiaobin.github.io" target="_blank" rel="noopener">leoxiaobin.github.io →</a>
           </div>
         </div>
         <div class="contact-row">
