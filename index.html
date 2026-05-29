@@ -3,8 +3,54 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bin Xiao — AI Researcher at Microsoft Superintelligence Team</title>
-  <meta name="description" content="Bin Xiao builds multimodal and agentic AI systems at Microsoft Superintelligence Team. Representative work includes Phi-3 Vision, Florence, CvT, and HRNet." />
+  <title>Bin Xiao (leoxiaobin) — AI Researcher | Florence-2, Phi-3 Vision, HRNet</title>
+  <meta name="description" content="Bin Xiao is an AI researcher working on multimodal foundation models, computer vision, and agentic AI. Representative work includes Florence-2, Phi-3 Vision, HRNet, CvT, and Simple Baselines for Human Pose Estimation." />
+  <link rel="canonical" href="https://leoxiaobin.github.io/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="profile" />
+  <meta property="og:url" content="https://leoxiaobin.github.io/" />
+  <meta property="og:title" content="Bin Xiao — AI Researcher | Florence-2, Phi-3 Vision, HRNet" />
+  <meta property="og:description" content="Bin Xiao is an AI researcher working on multimodal foundation models, computer vision, and agentic AI. Representative work includes Florence-2, Phi-3 Vision, HRNet, CvT, and Simple Baselines for Human Pose Estimation." />
+  <meta property="og:image" content="https://leoxiaobin.github.io/profile.png" />
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Bin Xiao — AI Researcher | Florence-2, Phi-3 Vision, HRNet" />
+  <meta name="twitter:description" content="Bin Xiao is an AI researcher working on multimodal foundation models, computer vision, and agentic AI. Representative work includes Florence-2, Phi-3 Vision, HRNet, CvT, and Simple Baselines for Human Pose Estimation." />
+  <meta name="twitter:image" content="https://leoxiaobin.github.io/profile.png" />
+
+  <!-- Structured data: Person -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Bin Xiao",
+    "alternateName": "leoxiaobin",
+    "url": "https://leoxiaobin.github.io/",
+    "image": "https://leoxiaobin.github.io/profile.png",
+    "jobTitle": "AI Researcher",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Microsoft"
+    },
+    "knowsAbout": [
+      "Multimodal Foundation Models",
+      "Computer Vision",
+      "Vision-Language Models",
+      "Agentic AI",
+      "Pose Estimation"
+    ],
+    "sameAs": [
+      "https://github.com/leoxiaobin",
+      "https://huggingface.co/leoxiaobin",
+      "https://www.linkedin.com/in/leobinxiao",
+      "https://orcid.org/0000-0001-6477-5911",
+      "https://scholar.google.com/citations?user=t5HZdzoAAAAJ&hl=en"
+    ]
+  }
+  </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
@@ -185,7 +231,7 @@
     /* ── Main ── */
     .main {
       padding: 3.5rem 3.5rem 5rem;
-      max-width: 840px;
+      max-width: 860px;
     }
 
     /* ── Section ── */
@@ -238,12 +284,12 @@
     }
 
     .hero-tagline {
-      font-family: var(--mono);
-      font-size: 0.72rem;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
+      font-family: var(--serif);
+      font-size: 1.05rem;
+      letter-spacing: 0;
       color: var(--brand);
-      margin-bottom: 0.3rem;
+      line-height: 1.45;
+      margin-bottom: 0.35rem;
     }
 
     .hero-role {
@@ -251,6 +297,25 @@
       font-size: 0.92rem;
       color: var(--stone);
       line-height: 1.5;
+    }
+
+    .hero-works {
+      font-family: var(--serif);
+      font-size: 0.98rem;
+      letter-spacing: 0;
+      color: var(--stone);
+      line-height: 1.6;
+      margin-top: 1.25rem;
+    }
+
+    .hero-works a {
+      color: var(--dark-warm);
+      border-bottom: 1px solid var(--border-soft);
+    }
+
+    .hero-works a:hover {
+      color: var(--brand);
+      border-color: var(--brand);
     }
 
     /* ── About ── */
@@ -643,6 +708,10 @@
     <div>
       <div class="sidebar-section-label" style="margin-bottom:0.6rem;">Navigate</div>
       <nav class="sidebar-nav">
+        <a href="#about">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          About
+        </a>
         <a href="#focus">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><circle cx="12" cy="12" r="8"/><line x1="12" y1="2" x2="12" y2="4"/><line x1="12" y1="20" x2="12" y2="22"/></svg>
           Research Focus
@@ -699,27 +768,42 @@
   <!-- ── MAIN ── -->
   <main class="main">
 
-    <!-- Hero -->
-    <section class="section" id="hero" style="margin-bottom:3rem;">
-      <h1 class="hero-name reveal">Bin Xiao</h1>
-      <p class="hero-tagline reveal">AI Researcher · Multimodal Foundation Models · Agentic AI</p>
-      <p class="hero-role reveal">Member of Technical Staff, Microsoft Superintelligence Team · Redmond, WA</p>
+      <!-- Hero -->
+      <section class="section" id="hero" style="margin-bottom:3rem;">
+        <h1 class="hero-name reveal">Bin Xiao</h1>
+        <p class="hero-tagline reveal">AI Researcher in Multimodal Foundation Models, Computer Vision, and Agentic AI</p>
+        <p class="hero-role reveal">Member of Technical Staff, Microsoft Superintelligence Team · Redmond, WA</p>
 
-      <p class="about-intro reveal" style="margin-top:1.5rem;">
-        I build foundation models for vision, multimodal understanding, and agentic AI — with a focus on turning research systems into widely used models and products.
-        Representative work includes
-        <a href="https://huggingface.co/collections/microsoft/florence-6669f44df0d87d9c3bfb76de" target="_blank" rel="noopener">Florence-2</a>,
-        <a href="https://huggingface.co/microsoft/Phi-3-vision-128k-instruct" target="_blank" rel="noopener">Phi-3 Vision</a>,
-        <a href="https://openaccess.thecvf.com/content/ICCV2021/papers/Wu_CvT_Introducing_Convolutions_to_Vision_Transformers_ICCV_2021_paper.pdf" target="_blank" rel="noopener">CvT</a>,
-        <a href="https://github.com/HRNet" target="_blank" rel="noopener">HRNet</a>, and
-        <a href="https://github.com/microsoft/human-pose-estimation.pytorch" target="_blank" rel="noopener">SimpleBaseline</a>.
-      </p>
+        <p class="hero-works reveal">
+          <a href="https://huggingface.co/collections/microsoft/florence-6669f44df0d87d9c3bfb76de" target="_blank" rel="noopener">Florence-2</a> ·
+          <a href="https://huggingface.co/microsoft/Phi-3-vision-128k-instruct" target="_blank" rel="noopener">Phi-3 Vision</a> ·
+          <a href="https://github.com/HRNet" target="_blank" rel="noopener">HRNet</a> ·
+          <a href="https://openaccess.thecvf.com/content/ICCV2021/papers/Wu_CvT_Introducing_Convolutions_to_Vision_Transformers_ICCV_2021_paper.pdf" target="_blank" rel="noopener">CvT</a> ·
+          <a href="https://github.com/microsoft/human-pose-estimation.pytorch" target="_blank" rel="noopener">Simple Baselines</a>
+        </p>
 
-      <a class="scholar-cta reveal" href="https://scholar.google.com/citations?view_op=list_works&hl=en&user=t5HZdzoAAAAJ" target="_blank" rel="noopener">
-        <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 24a7 7 0 110-14 7 7 0 010 14zm0-24L0 9.5l4.838 3.94A8 8 0 0112 9a8 8 0 017.162 4.44L24 9.5z"/></svg>
-        Google Scholar Profile →
-      </a>
-    </section>
+        <a class="scholar-cta reveal" href="https://scholar.google.com/citations?view_op=list_works&hl=en&user=t5HZdzoAAAAJ" target="_blank" rel="noopener">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 24a7 7 0 110-14 7 7 0 010 14zm0-24L0 9.5l4.838 3.94A8 8 0 0112 9a8 8 0 017.162 4.44L24 9.5z"/></svg>
+          Google Scholar Profile →
+        </a>
+      </section>
+
+      <!-- About -->
+      <section class="section" id="about">
+        <div class="section-header reveal">
+          <h2>About</h2>
+        </div>
+        <p class="about-intro reveal">
+          I am an AI researcher working on multimodal foundation models, computer vision, and agentic AI.
+          My work spans vision-language model training, post-training, visual recognition, document understanding, and human pose estimation.
+          Representative projects include
+          <a href="https://huggingface.co/collections/microsoft/florence-6669f44df0d87d9c3bfb76de" target="_blank" rel="noopener">Florence-2</a>,
+          <a href="https://huggingface.co/microsoft/Phi-3-vision-128k-instruct" target="_blank" rel="noopener">Phi-3 Vision</a>,
+          <a href="https://github.com/HRNet" target="_blank" rel="noopener">HRNet</a>,
+          <a href="https://openaccess.thecvf.com/content/ICCV2021/papers/Wu_CvT_Introducing_Convolutions_to_Vision_Transformers_ICCV_2021_paper.pdf" target="_blank" rel="noopener">CvT</a>, and
+          <a href="https://github.com/microsoft/human-pose-estimation.pytorch" target="_blank" rel="noopener">Simple Baselines for Human Pose Estimation</a>.
+        </p>
+      </section>
 
     <!-- Research Focus -->
     <section class="section" id="focus">
