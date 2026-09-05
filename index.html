@@ -3,24 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bin Xiao (leoxiaobin) — AI Researcher | Florence-2, Phi-3 Vision, HRNet</title>
-  <meta name="description" content="Bin Xiao is an AI researcher working on multimodal foundation models, computer vision, and agentic AI. Representative work includes Florence-2, Phi-3 Vision, HRNet, CvT, and Simple Baselines for Human Pose Estimation." />
+  <title>Bin Xiao — Research &amp; Publications</title>
+  <meta name="description" content="Bin Xiao's research in multimodal foundation models, computer vision, and agentic AI. Selected publications, technical reports, and open-source models." />
   <link rel="canonical" href="https://leoxiaobin.github.io/" />
 
-  <!-- Open Graph -->
   <meta property="og:type" content="profile" />
   <meta property="og:url" content="https://leoxiaobin.github.io/" />
-  <meta property="og:title" content="Bin Xiao — AI Researcher | Florence-2, Phi-3 Vision, HRNet" />
-  <meta property="og:description" content="Bin Xiao is an AI researcher working on multimodal foundation models, computer vision, and agentic AI. Representative work includes Florence-2, Phi-3 Vision, HRNet, CvT, and Simple Baselines for Human Pose Estimation." />
+  <meta property="og:title" content="Bin Xiao — Research &amp; Publications" />
+  <meta property="og:description" content="Bin Xiao's research in multimodal foundation models, computer vision, and agentic AI. Selected publications, technical reports, and open-source models." />
   <meta property="og:image" content="https://leoxiaobin.github.io/profile.png" />
+  <meta property="og:image:alt" content="Portrait of Bin Xiao" />
 
-  <!-- Twitter / X -->
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Bin Xiao — AI Researcher | Florence-2, Phi-3 Vision, HRNet" />
-  <meta name="twitter:description" content="Bin Xiao is an AI researcher working on multimodal foundation models, computer vision, and agentic AI. Representative work includes Florence-2, Phi-3 Vision, HRNet, CvT, and Simple Baselines for Human Pose Estimation." />
+  <meta name="twitter:title" content="Bin Xiao — Research &amp; Publications" />
+  <meta name="twitter:description" content="Bin Xiao's research in multimodal foundation models, computer vision, and agentic AI. Selected publications, technical reports, and open-source models." />
   <meta name="twitter:image" content="https://leoxiaobin.github.io/profile.png" />
+  <meta name="twitter:image:alt" content="Portrait of Bin Xiao" />
 
-  <!-- Structured data: Person -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -29,7 +28,7 @@
     "alternateName": "leoxiaobin",
     "url": "https://leoxiaobin.github.io/",
     "image": "https://leoxiaobin.github.io/profile.png",
-    "jobTitle": "AI Researcher",
+    "jobTitle": "Member of Technical Staff",
     "worksFor": {
       "@type": "Organization",
       "name": "Microsoft"
@@ -53,15 +52,13 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; }
 
     :root {
       --parchment:  #f5f4ed;
       --ivory:      #faf9f5;
-      --warm-sand:  #e8e6dc;
       --brand:      #1B365D;
       --brand-light:#2D5A8A;
       --near-black: #141413;
@@ -72,1064 +69,625 @@
       --border-soft:#e5e3d8;
       --tag-bg:     #EEF2F7;
       --serif:      Charter, Georgia, Palatino, "Times New Roman", serif;
-      --sans:       var(--serif);
       --mono:       "JetBrains Mono", "SF Mono", "Fira Code", Consolas, Monaco, monospace;
       --sidebar-w:  272px;
     }
 
     body {
       font-family: var(--serif);
-      background: var(--parchment);
-      color: var(--near-black);
+      font-size: 1.0625rem;
       line-height: 1.55;
-      min-height: 100vh;
-      overflow-x: hidden;
+      color: var(--dark-warm);
+      background: var(--parchment);
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
     }
 
-    a { color: var(--dark-warm); text-decoration: none; transition: color 0.2s; }
-    a:hover { color: var(--brand); }
+    a {
+      color: var(--brand);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 0.18em;
+    }
 
-    /* ── Layout ── */
+    a:hover { color: var(--brand-light); }
+    a:focus-visible, summary:focus-visible {
+      outline: 2px solid var(--brand);
+      outline-offset: 4px;
+    }
+
+    strong { font-weight: 500; color: var(--near-black); }
+
+    .skip-link {
+      position: fixed;
+      top: 1rem;
+      left: 1rem;
+      z-index: 10;
+      padding: 0.5rem 0.75rem;
+      background: var(--ivory);
+      transform: translateY(calc(-100% - 2rem));
+    }
+
+    .skip-link:focus { transform: none; }
+
     .layout {
       display: grid;
-      grid-template-columns: var(--sidebar-w) 1fr;
+      grid-template-columns: var(--sidebar-w) minmax(0, 1fr);
       min-height: 100vh;
     }
 
-    /* ── Sidebar ── */
     .sidebar {
       position: sticky;
       top: 0;
       height: 100vh;
       overflow-y: auto;
+      padding: 3rem 1.75rem;
       background: var(--ivory);
       border-right: 1px solid var(--border);
-      display: flex;
-      flex-direction: column;
-      padding: 2.5rem 1.5rem 2rem;
-      gap: 1.5rem;
     }
 
-    .sidebar::-webkit-scrollbar { width: 3px; }
-    .sidebar::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
-
-    /* Profile */
     .profile-photo {
-      width: 92px;
-      height: 92px;
-      border-radius: 50%;
-      background: var(--warm-sand);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 0 auto;
-      flex-shrink: 0;
-      box-shadow: 0 0 0 3px var(--ivory), 0 0 0 4px var(--border);
-      overflow: hidden;
-    }
-
-    .profile-photo img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      border-radius: 50%;
       display: block;
+      width: 104px;
+      height: 104px;
+      object-fit: cover;
+      border-radius: 3px;
+      margin-bottom: 1rem;
     }
 
     .profile-name {
-      text-align: center;
-      font-family: var(--serif);
-      font-size: 1.35rem;
+      font-size: 1.5rem;
       font-weight: 500;
+      line-height: 1.2;
       color: var(--near-black);
-      letter-spacing: -0.01em;
-      margin-top: 0.25rem;
     }
 
     .profile-meta {
-      text-align: center;
-      font-family: var(--mono);
-      font-size: 0.65rem;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: var(--stone);
-      line-height: 1.8;
-      margin-top: 0.15rem;
+      margin-top: 0.5rem;
+      font-size: 0.9375rem;
+      color: var(--olive);
     }
 
-    .profile-employer {
-      display: block;
-      color: var(--brand);
-      margin-top: 0.1rem;
+    .profile-meta span { display: block; }
+
+    .sidebar-nav {
+      display: flex;
+      flex-direction: column;
+      margin-top: 2rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid var(--border);
     }
-
-    .sidebar-divider { height: 1px; background: var(--border-soft); }
-
-    /* Nav */
-    .sidebar-section-label {
-      font-family: var(--mono);
-      font-size: 0.6rem;
-      font-weight: 500;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--stone);
-      padding: 0 0.5rem;
-    }
-
-    .sidebar-nav { display: flex; flex-direction: column; gap: 0; }
 
     .sidebar-nav a {
-      display: flex;
-      align-items: center;
-      gap: 0.65rem;
-      font-family: var(--serif);
-      font-size: 0.85rem;
-      font-weight: 500;
-      color: var(--olive);
-      padding: 0.5rem 0.5rem;
-      border-left: 2.5px solid transparent;
-      border-radius: 0 4px 4px 0;
-      transition: color 0.2s, border-color 0.2s, background 0.2s;
+      padding: 0.35rem 0;
+      color: var(--dark-warm);
+      text-decoration: none;
+      font-size: 0.9375rem;
     }
 
-    .sidebar-nav a:hover,
-    .sidebar-nav a.active {
-      color: var(--near-black);
-      border-left-color: var(--brand);
-      background: rgba(27, 54, 93, 0.04);
-    }
+    .sidebar-nav a:hover { color: var(--brand); text-decoration: underline; }
 
-    .sidebar-nav a svg { flex-shrink: 0; opacity: 0.5; }
-    .sidebar-nav a:hover svg,
-    .sidebar-nav a.active svg { opacity: 0.8; }
-
-    /* Social links */
-    .social-links { display: flex; flex-direction: column; gap: 0; }
-
-    .social-link {
-      display: flex;
-      align-items: center;
-      gap: 0.6rem;
+    .sidebar-section-label, .section-label, .pub-meta, .pub-link,
+    .citation summary, .trajectory-year, .recognition-year, .contact-label {
       font-family: var(--mono);
-      font-size: 0.68rem;
+      font-size: 0.75rem;
+      font-weight: 400;
       letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .sidebar-section-label {
       color: var(--stone);
-      padding: 0.45rem 0.5rem;
-      border-left: 2.5px solid transparent;
-      transition: color 0.2s, border-color 0.2s;
+      margin: 2rem 0 0.5rem;
     }
 
-    .social-link:hover {
-      color: var(--brand);
-      border-left-color: var(--brand);
-    }
+    .social-links { display: flex; flex-direction: column; }
+    .social-links a { font-size: 0.9375rem; padding: 0.25rem 0; }
 
-    .social-link svg { flex-shrink: 0; }
-
-    /* ── Main ── */
     .main {
-      padding: 3.5rem 3.5rem 5rem;
-      max-width: 860px;
+      min-width: 0;
+      width: 100%;
+      max-width: 980px;
+      padding: 3.5rem clamp(2rem, 5vw, 4.5rem) 2rem;
     }
 
-    /* ── Section ── */
-    .section {
-      margin-bottom: 4rem;
-      scroll-margin-top: 2rem;
-    }
+    .section { margin-bottom: 3rem; scroll-margin-top: 1.5rem; }
 
     .section-header {
-      display: flex;
-      align-items: baseline;
-      justify-content: space-between;
-      gap: 1.5rem;
-      margin-bottom: 1.75rem;
-      padding-bottom: 0.75rem;
+      margin-bottom: 1.25rem;
+      padding-bottom: 0.5rem;
       border-bottom: 1px solid var(--border);
     }
 
     .section-header h2 {
-      font-family: var(--serif);
-      font-size: clamp(1.5rem, 3vw, 2rem);
+      font-size: 1.5rem;
       font-weight: 500;
-      letter-spacing: -0.02em;
+      line-height: 1.25;
       color: var(--near-black);
-      line-height: 1.2;
       border-left: 2.5px solid var(--brand);
-      border-radius: 1.5px;
       padding-left: 0.6rem;
     }
 
-    .section-counter {
-      font-family: var(--mono);
-      font-size: 0.65rem;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: var(--brand);
-      flex-shrink: 0;
-      padding-top: 0.2rem;
-    }
-
-    /* ── Hero ── */
     .hero-name {
-      font-family: var(--serif);
-      font-size: clamp(2rem, 4vw, 2.8rem);
+      font-size: clamp(2rem, 4vw, 2.5rem);
       font-weight: 500;
-      color: var(--near-black);
+      line-height: 1.2;
       letter-spacing: -0.02em;
-      line-height: 1.15;
-      margin-bottom: 0.5rem;
-    }
-
-    .hero-tagline {
-      font-family: var(--serif);
-      font-size: 1.05rem;
-      letter-spacing: 0;
-      color: var(--brand);
-      line-height: 1.45;
-      margin-bottom: 0.35rem;
-    }
-
-    .hero-role {
-      font-family: var(--serif);
-      font-size: 0.92rem;
-      color: var(--stone);
-      line-height: 1.5;
-    }
-
-    .hero-works {
-      font-family: var(--serif);
-      font-size: 0.98rem;
-      letter-spacing: 0;
-      color: var(--stone);
-      line-height: 1.6;
-      margin-top: 1.25rem;
-    }
-
-    .hero-works a {
-      color: var(--dark-warm);
-      border-bottom: 1px solid var(--border-soft);
-    }
-
-    .hero-works a:hover {
-      color: var(--brand);
-      border-color: var(--brand);
-    }
-
-    /* ── About ── */
-    .about-intro {
-      font-family: var(--serif);
-      font-size: 1.05rem;
-      color: var(--olive);
-      line-height: 1.65;
-      margin-bottom: 1.25rem;
-    }
-
-    .about-intro strong { color: var(--near-black); font-weight: 500; }
-    .about-intro a { color: var(--brand); border-bottom: 1px solid var(--border); }
-    .about-intro a:hover { color: var(--brand-light); border-color: var(--brand-light); }
-
-    .scholar-cta {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      font-family: var(--mono);
-      font-size: 0.7rem;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      color: var(--brand);
-      border-bottom: 1px solid var(--border);
-      padding-bottom: 0.1rem;
-      margin-bottom: 1.75rem;
-      transition: all 0.2s;
-    }
-
-    .scholar-cta:hover { color: var(--brand-light); border-color: var(--brand-light); }
-
-    /* ── Research Focus ── */
-    .focus-list { list-style: none; }
-
-    .focus-item {
-      padding: 1rem 0;
-      border-bottom: 1px solid var(--border-soft);
-    }
-
-    .focus-item:last-child { border-bottom: none; }
-
-    .focus-title {
-      display: block;
-      font-family: var(--serif);
-      font-size: 0.95rem;
-      font-weight: 500;
       color: var(--near-black);
-      margin-bottom: 0.3rem;
     }
 
-    .focus-desc {
-      display: block;
-      font-size: 0.88rem;
-      color: var(--olive);
-      line-height: 1.55;
+    .hero-role { margin-top: 0.5rem; color: var(--olive); }
+    .about-intro { margin-top: 1.25rem; }
+
+    .profile-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem 1.25rem;
+      margin-top: 1rem;
+      font-size: 0.9375rem;
     }
 
-    /* ── Trajectory ── */
-    .trajectory-list { list-style: none; }
+    .focus-list { padding-left: 1.2rem; }
+    .focus-item { padding-left: 0.25rem; margin-bottom: 0.6rem; }
+    .focus-item::marker { color: var(--stone); }
 
-    .trajectory-item {
-      display: grid;
-      grid-template-columns: 120px 1fr;
-      gap: 1.5rem;
-      padding: 1.1rem 0;
-      border-bottom: 1px solid var(--border-soft);
-      align-items: start;
-    }
-
-    .trajectory-item:last-child { border-bottom: none; }
-
-    .trajectory-year {
-      font-family: var(--mono);
-      font-size: 0.72rem;
-      font-weight: 500;
-      letter-spacing: 0.04em;
-      color: var(--brand);
-      padding-top: 0.2rem;
-      white-space: nowrap;
-    }
-
-    .trajectory-desc {
-      font-size: 0.92rem;
-      color: var(--olive);
-      line-height: 1.6;
-    }
-
-    .trajectory-desc a { color: var(--dark-warm); border-bottom: 1px solid var(--border-soft); transition: color 0.2s, border-color 0.2s; }
-    .trajectory-desc a:hover { color: var(--brand); border-color: var(--brand); }
-    .trajectory-desc strong { color: var(--near-black); font-weight: 500; }
-
-    /* ── Publications ── */
+    .section-note { font-size: 0.9375rem; color: var(--olive); }
+    .section-label { color: var(--stone); margin: 1.5rem 0 0.25rem; }
     .pub-list { list-style: none; }
 
     .pub-item {
-      display: grid;
-      grid-template-columns: 36px 1fr;
-      gap: 1.25rem;
-      padding: 1.5rem 0;
+      padding: 1.25rem 0;
       border-bottom: 1px solid var(--border-soft);
     }
 
     .pub-item:last-child { border-bottom: none; }
 
-    .pub-num {
-      font-family: var(--serif);
-      font-size: 1.1rem;
+    .pub-title {
+      font-size: 1.125rem;
       font-weight: 500;
-      color: var(--brand);
-      padding-top: 0.1rem;
-      user-select: none;
+      line-height: 1.4;
     }
 
+    .pub-title a { text-decoration: none; }
+    .pub-title a:hover { text-decoration: underline; }
+
+    .pub-authors {
+      font-size: 0.9375rem;
+      color: var(--olive);
+      margin-top: 0.35rem;
+    }
+
+    .pub-authors strong { text-decoration: underline; text-underline-offset: 0.15em; }
+
     .pub-meta {
-      font-family: var(--mono);
-      font-size: 0.65rem;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      color: var(--stone);
-      margin-bottom: 0.4rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      gap: 0.5rem;
+      color: var(--olive);
+      margin-top: 0.5rem;
     }
 
     .pub-badge {
-      display: inline-block;
-      font-size: 0.58rem;
-      padding: 0.1rem 0.4rem;
+      padding: 0.1rem 0.35rem;
       background: var(--tag-bg);
       color: var(--brand);
       border-radius: 2px;
-      margin-left: 0.4rem;
-      letter-spacing: 0.04em;
-      vertical-align: middle;
-      font-weight: 500;
     }
 
-    .pub-title {
-      font-family: var(--serif);
-      font-size: 1.05rem;
-      font-weight: 500;
-      color: var(--near-black);
-      line-height: 1.35;
-      margin-bottom: 0.4rem;
-      display: inline;
+    .pub-desc { font-size: 0.9375rem; margin-top: 0.5rem; }
+
+    .pub-resources, .pub-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem 1rem;
+      align-items: baseline;
     }
 
-    .pub-item:hover .pub-title { color: var(--brand); }
-    .pub-title a { color: inherit; text-decoration: none; }
-    .pub-title a:hover { color: var(--brand); }
+    .pub-resources { margin-top: 0.65rem; }
+    .citation { min-width: 0; }
+    .citation summary { color: var(--brand); cursor: pointer; }
+    .citation summary:hover { color: var(--brand-light); }
+    .citation[open] { flex-basis: 100%; }
 
-    .pub-desc {
-      font-size: 0.85rem;
-      color: var(--stone);
-      line-height: 1.55;
-      margin-top: 0.4rem;
-      margin-bottom: 0.65rem;
-    }
-
-    .pub-links { display: flex; gap: 1.25rem; }
-
-    .pub-link {
+    .citation pre {
+      margin-top: 0.75rem;
+      padding: 1rem;
+      border: 1px solid var(--border);
+      background: var(--ivory);
       font-family: var(--mono);
-      font-size: 0.65rem;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      color: var(--stone);
-      display: inline-flex;
-      align-items: center;
-      gap: 0.3rem;
-      transition: color 0.2s;
+      font-size: 0.75rem;
+      line-height: 1.55;
+      white-space: pre-wrap;
+      overflow-wrap: anywhere;
     }
 
-    .pub-link:hover { color: var(--brand); }
-    .pub-link svg { width: 10px; height: 10px; }
+    .citation code { font: inherit; }
 
-    a.pub-badge { text-decoration: none; transition: background 0.2s; }
-    a.pub-badge:hover { background: #D6E1EE; color: var(--brand); }
+    .trajectory-list, .recognition-list { list-style: none; }
 
-    /* ── Recognition ── */
-    .recognition-list { list-style: none; }
-
-    .recognition-item {
+    .trajectory-item, .recognition-item {
       display: grid;
-      grid-template-columns: 6px 1fr;
-      gap: 1rem;
+      grid-template-columns: 8rem minmax(0, 1fr);
+      gap: 1.25rem;
       padding: 0.85rem 0;
       border-bottom: 1px solid var(--border-soft);
-      font-size: 0.9rem;
-      color: var(--olive);
-      line-height: 1.55;
-      align-items: start;
+      font-size: 0.9375rem;
     }
 
-    .recognition-item:last-child { border-bottom: none; }
+    .trajectory-item:last-child, .recognition-item:last-child { border-bottom: none; }
+    .trajectory-year, .recognition-year { color: var(--stone); padding-top: 0.15rem; }
+    .recognition-item { grid-template-columns: 4rem minmax(0, 1fr); }
+    .recognition-note { margin-top: 0.5rem; }
 
-    .recognition-dot {
-      width: 6px;
-      height: 6px;
-      border-radius: 50%;
-      background: var(--brand);
-      margin-top: 0.5rem;
-      flex-shrink: 0;
-    }
-
-    .recognition-item strong { color: var(--near-black); font-weight: 500; }
-
-    /* ── Contact ── */
-    .contact-rows { display: flex; flex-direction: column; gap: 0; }
+    .contact-rows { margin-top: 0.75rem; }
 
     .contact-row {
       display: grid;
-      grid-template-columns: 80px 1fr;
-      gap: 1.5rem;
-      align-items: center;
-      padding: 0.85rem 0;
-      border-bottom: 1px solid var(--border-soft);
-    }
-
-    .contact-row:last-child { border-bottom: none; }
-
-    .contact-label {
-      font-family: var(--mono);
-      font-size: 0.62rem;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: var(--stone);
-    }
-
-    .contact-val {
-      font-size: 0.9rem;
-      color: var(--olive);
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-    }
-
-    .contact-val a {
-      color: var(--dark-warm);
-      border-bottom: 1px solid var(--border-soft);
-      transition: color 0.2s, border-color 0.2s;
-    }
-
-    .contact-val a:hover { color: var(--brand); border-color: var(--brand); }
-
-    /* ── Footer ── */
-    .footer {
-      padding-top: 1.5rem;
-      margin-top: 1rem;
-      border-top: 1px solid var(--border);
-      font-family: var(--mono);
-      font-size: 0.62rem;
-      letter-spacing: 0.06em;
-      color: var(--stone);
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
+      grid-template-columns: 7rem minmax(0, 1fr);
       gap: 1rem;
+      align-items: baseline;
+      padding: 0.5rem 0;
     }
 
-    .footer a {
+    .contact-label { color: var(--stone); }
+    .contact-val { font-size: 0.9375rem; overflow-wrap: anywhere; }
+
+    .footer {
+      padding-top: 1rem;
+      border-top: 1px solid var(--border);
+      font-size: 0.8125rem;
       color: var(--stone);
-      border-bottom: 1px solid var(--border-soft);
-    }
-
-    .footer a:hover { color: var(--brand); border-color: var(--brand); }
-
-    /* ── Scroll reveal ── */
-    .reveal {
-      opacity: 0;
-      transform: translateY(18px);
-      transition: opacity 0.6s cubic-bezier(0.22,1,0.36,1),
-                  transform 0.6s cubic-bezier(0.22,1,0.36,1);
-    }
-
-    .reveal.visible { opacity: 1; transform: none; }
-
-    .reveal-stagger > * {
-      opacity: 0;
-      transform: translateY(14px);
-      transition: opacity 0.5s cubic-bezier(0.22,1,0.36,1),
-                  transform 0.5s cubic-bezier(0.22,1,0.36,1);
-    }
-
-    .reveal-stagger.visible > *:nth-child(1) { opacity:1; transform:none; transition-delay:0s; }
-    .reveal-stagger.visible > *:nth-child(2) { opacity:1; transform:none; transition-delay:0.05s; }
-    .reveal-stagger.visible > *:nth-child(3) { opacity:1; transform:none; transition-delay:0.10s; }
-    .reveal-stagger.visible > *:nth-child(4) { opacity:1; transform:none; transition-delay:0.15s; }
-    .reveal-stagger.visible > *:nth-child(5) { opacity:1; transform:none; transition-delay:0.20s; }
-    .reveal-stagger.visible > *:nth-child(6) { opacity:1; transform:none; transition-delay:0.25s; }
-    .reveal-stagger.visible > *:nth-child(7) { opacity:1; transform:none; transition-delay:0.30s; }
-    .reveal-stagger.visible > *:nth-child(8) { opacity:1; transform:none; transition-delay:0.35s; }
-
-    /* ── Mobile nav toggle ── */
-    .mobile-nav-toggle {
-      display: none;
-      position: fixed;
-      top: 1rem;
-      right: 1rem;
-      z-index: 200;
-      background: var(--ivory);
-      border: 1px solid var(--border);
-      border-radius: 6px;
-      padding: 0.5rem;
-      cursor: pointer;
-      color: var(--near-black);
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
     }
 
     @media (max-width: 900px) {
-      .layout { grid-template-columns: 1fr; }
+      .layout { grid-template-columns: minmax(0, 1fr); }
 
       .sidebar {
-        position: fixed;
-        left: -100%;
-        top: 0;
-        width: var(--sidebar-w);
-        z-index: 100;
-        transition: left 0.3s ease;
+        position: static;
+        height: auto;
+        overflow: visible;
+        padding: 1.5rem 2rem;
+        border-right: none;
+        border-bottom: 1px solid var(--border);
       }
 
-      .sidebar.open { left: 0; box-shadow: 8px 0 40px rgba(0,0,0,0.08); }
-
-      .sidebar-overlay {
-        display: none;
-        position: fixed;
-        inset: 0;
-        background: rgba(20, 20, 19, 0.3);
-        z-index: 90;
+      .profile {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
       }
 
-      .sidebar-overlay.active { display: block; }
+      .profile-photo { width: 72px; height: 72px; margin-bottom: 0; flex-shrink: 0; }
+      .profile-name { font-size: 1.25rem; }
+      .profile-meta { margin-top: 0.25rem; font-size: 0.875rem; }
+      .profile-meta .profile-location { display: none; }
 
-      .mobile-nav-toggle { display: flex; align-items: center; }
+      .sidebar-nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0.25rem 1.25rem;
+        margin-top: 1rem;
+        padding-top: 0.75rem;
+      }
 
-      .main { padding: 2rem 1.5rem; padding-top: 3.5rem; }
-
-      .trajectory-item { grid-template-columns: 1fr; gap: 0.25rem; }
-      .pub-item { grid-template-columns: 1fr; }
-      .pub-num { display: none; }
+      .sidebar-profiles { display: none; }
+      .main { max-width: 820px; margin: 0 auto; padding: 2rem; }
     }
 
     @media (max-width: 500px) {
-      .main { padding: 1.25rem 1rem; padding-top: 3.5rem; }
+      .sidebar { padding: 1.25rem; }
+      .main { padding: 1.75rem 1.25rem; }
+      .section { margin-bottom: 2.5rem; }
+      .trajectory-item { grid-template-columns: minmax(0, 1fr); gap: 0.25rem; }
+      .recognition-item { gap: 0.75rem; }
+      .contact-row { grid-template-columns: minmax(0, 1fr); gap: 0.15rem; }
     }
 
-    @media (prefers-reduced-motion: reduce) {
-      *, *::before, *::after {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-        scroll-behavior: auto !important;
-      }
-      .reveal, .reveal-stagger > * {
-        opacity: 1 !important;
-        transform: none !important;
-      }
+    @media print {
+      @page { margin: 18mm; }
+      body { font-size: 11pt; background: transparent; }
+      .layout { display: block; }
+      .sidebar, .skip-link, .citation { display: none; }
+      .main { max-width: none; padding: 0; }
+      .section { margin-bottom: 1.5rem; }
+      .section-header, .section-label { break-after: avoid; }
+      .pub-item, .trajectory-item, .recognition-item { break-inside: avoid; }
+      a { color: var(--near-black); }
     }
   </style>
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
 
-<div class="sidebar-overlay" id="overlay" onclick="closeSidebar()"></div>
-
-<button class="mobile-nav-toggle" onclick="toggleSidebar()" aria-label="Toggle navigation">
-  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-    <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
-  </svg>
-</button>
-
-<div class="layout">
-
-  <!-- ── SIDEBAR ── -->
-  <aside class="sidebar" id="sidebar">
-
-    <div class="profile-photo">
-      <img src="profile.png" alt="Bin Xiao" />
-    </div>
-
-    <div>
-      <div class="profile-name">Bin Xiao</div>
-      <div class="profile-meta">
-        Member of Technical Staff
-        <span class="profile-employer">Microsoft Superintelligence Team</span>
-        Redmond, WA
+  <div class="layout">
+    <aside class="sidebar" aria-label="Profile and navigation">
+      <div class="profile">
+        <img class="profile-photo" src="profile.png" alt="Portrait of Bin Xiao" width="500" height="469" />
+        <div>
+          <p class="profile-name">Bin Xiao</p>
+          <p class="profile-meta">
+            <span>Member of Technical Staff</span>
+            <span>Microsoft Superintelligence Team</span>
+            <span class="profile-location">Redmond, WA</span>
+          </p>
+        </div>
       </div>
-    </div>
 
-    <div class="sidebar-divider"></div>
-
-    <div>
-      <div class="sidebar-section-label" style="margin-bottom:0.6rem;">Navigate</div>
-      <nav class="sidebar-nav">
-        <a href="#about">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
-          About
-        </a>
-        <a href="#focus">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><circle cx="12" cy="12" r="8"/><line x1="12" y1="2" x2="12" y2="4"/><line x1="12" y1="20" x2="12" y2="22"/></svg>
-          Research Focus
-        </a>
-        <a href="#work">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
-          Selected Work
-        </a>
-        <a href="#trajectory">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
-          Trajectory
-        </a>
-        <a href="#recognition">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
-          Recognition
-        </a>
-        <a href="#contact">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-          Contact
-        </a>
+      <nav class="sidebar-nav" aria-label="Page sections">
+        <a href="#about">About</a>
+        <a href="#focus">Research interests</a>
+        <a href="#work">Publications &amp; reports</a>
+        <a href="#trajectory">Research background</a>
+        <a href="#recognition">Recognition</a>
+        <a href="#contact">Contact</a>
       </nav>
-    </div>
 
-    <div class="sidebar-divider"></div>
-
-    <div>
-      <div class="sidebar-section-label" style="margin-bottom:0.6rem;">Links</div>
-      <div class="social-links">
-        <a class="social-link" href="https://scholar.google.com/citations?user=t5HZdzoAAAAJ&hl=en" target="_blank" rel="noopener">
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 24a7 7 0 110-14 7 7 0 010 14zm0-24L0 9.5l4.838 3.94A8 8 0 0112 9a8 8 0 017.162 4.44L24 9.5z"/></svg>
-          Google Scholar
-        </a>
-        <a class="social-link" href="https://github.com/leoxiaobin" target="_blank" rel="noopener">
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
-          GitHub
-        </a>
-        <a class="social-link" href="https://orcid.org/0000-0001-6477-5911" target="_blank" rel="noopener">
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zM7.369 4.378c.525 0 .947.431.947.947s-.422.947-.947.947a.95.95 0 01-.947-.947c0-.525.422-.947.947-.947zm-.722 3.038h1.444v10.041H6.647V7.416zm3.562 0h3.9c3.712 0 5.344 2.653 5.344 5.025 0 2.578-2.016 5.016-5.325 5.016h-3.919V7.416zm1.444 1.303v7.444h2.297c3.272 0 3.872-2.484 3.872-3.722 0-2.016-1.284-3.722-3.872-3.722h-2.297z"/></svg>
-          ORCID
-        </a>
-        <a class="social-link" href="https://www.linkedin.com/in/leobinxiao" target="_blank" rel="noopener">
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-          LinkedIn
-        </a>
-        <a class="social-link" href="https://huggingface.co/leoxiaobin" target="_blank" rel="noopener">
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm-1.4 18.2c-.5.1-.9-.3-.9-.7v-.2c.1-.4.5-.7.9-.6.4.1.7.5.6.9-.1.3-.3.5-.6.6zm4.8 0c-.5.1-.9-.3-.9-.7v-.2c.1-.4.5-.7.9-.6.4.1.7.5.6.9-.1.3-.3.5-.6.6zM8.2 12.8c-.7 0-1.3-.9-1.3-2s.6-2 1.3-2 1.3.9 1.3 2-.6 2-1.3 2zm7.6 0c-.7 0-1.3-.9-1.3-2s.6-2 1.3-2 1.3.9 1.3 2-.6 2-1.3 2z"/></svg>
-          Hugging Face
-        </a>
+      <div class="sidebar-profiles">
+        <p class="sidebar-section-label">Research profiles</p>
+        <div class="social-links">
+          <a href="https://scholar.google.com/citations?user=t5HZdzoAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>
+          <a href="https://orcid.org/0000-0001-6477-5911" target="_blank" rel="noopener">ORCID</a>
+          <a href="https://github.com/leoxiaobin" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://huggingface.co/leoxiaobin" target="_blank" rel="noopener">Hugging Face</a>
+          <a href="https://www.linkedin.com/in/leobinxiao" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
       </div>
-    </div>
+    </aside>
 
-  </aside>
-
-  <!-- ── MAIN ── -->
-  <main class="main">
-
-      <!-- Hero -->
-      <section class="section" id="hero" style="margin-bottom:3rem;">
-        <h1 class="hero-name reveal">Bin Xiao</h1>
-        <p class="hero-tagline reveal">AI Researcher in Multimodal Foundation Models, Computer Vision, and Agentic AI</p>
-        <p class="hero-role reveal">Member of Technical Staff, Microsoft Superintelligence Team · Redmond, WA</p>
-
-        <p class="hero-works reveal">
-          <a href="https://huggingface.co/collections/microsoft/florence-6669f44df0d87d9c3bfb76de" target="_blank" rel="noopener">Florence-2</a> ·
-          <a href="https://huggingface.co/microsoft/Phi-3-vision-128k-instruct" target="_blank" rel="noopener">Phi-3 Vision</a> ·
-          <a href="https://github.com/HRNet" target="_blank" rel="noopener">HRNet</a> ·
-          <a href="https://openaccess.thecvf.com/content/ICCV2021/papers/Wu_CvT_Introducing_Convolutions_to_Vision_Transformers_ICCV_2021_paper.pdf" target="_blank" rel="noopener">CvT</a> ·
-          <a href="https://github.com/microsoft/human-pose-estimation.pytorch" target="_blank" rel="noopener">Simple Baselines</a>
+    <main class="main" id="main-content" tabindex="-1">
+      <section class="section" id="about" aria-labelledby="hero-name">
+        <header id="hero">
+          <h1 class="hero-name" id="hero-name">Bin Xiao</h1>
+          <p class="hero-role">Member of Technical Staff<br />Microsoft Superintelligence Team · Redmond, WA</p>
+        </header>
+        <p class="about-intro">
+          I am an AI researcher studying multimodal foundation models, computer vision, and agentic AI.
+          My work spans vision-language model training and post-training, visual recognition,
+          document understanding, and human pose estimation.
         </p>
-
-        <a class="scholar-cta reveal" href="https://scholar.google.com/citations?view_op=list_works&hl=en&user=t5HZdzoAAAAJ" target="_blank" rel="noopener">
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 24a7 7 0 110-14 7 7 0 010 14zm0-24L0 9.5l4.838 3.94A8 8 0 0112 9a8 8 0 017.162 4.44L24 9.5z"/></svg>
-          Google Scholar Profile →
-        </a>
+        <div class="profile-links">
+          <a href="https://scholar.google.com/citations?user=t5HZdzoAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>
+          <a href="https://orcid.org/0000-0001-6477-5911" target="_blank" rel="noopener">ORCID</a>
+          <a href="https://github.com/leoxiaobin" target="_blank" rel="noopener">GitHub</a>
+        </div>
       </section>
 
-      <!-- About -->
-      <section class="section" id="about">
-        <div class="section-header reveal">
-          <h2>About</h2>
+      <section class="section" id="focus" aria-labelledby="focus-title">
+        <div class="section-header">
+          <h2 id="focus-title">Research interests</h2>
         </div>
-        <p class="about-intro reveal">
-          I am an AI researcher working on multimodal foundation models, computer vision, and agentic AI.
-          My work spans vision-language model training, post-training, visual recognition, document understanding, and human pose estimation.
-          Representative projects include
-          <a href="https://huggingface.co/collections/microsoft/florence-6669f44df0d87d9c3bfb76de" target="_blank" rel="noopener">Florence-2</a>,
-          <a href="https://huggingface.co/microsoft/Phi-3-vision-128k-instruct" target="_blank" rel="noopener">Phi-3 Vision</a>,
-          <a href="https://github.com/HRNet" target="_blank" rel="noopener">HRNet</a>,
-          <a href="https://openaccess.thecvf.com/content/ICCV2021/papers/Wu_CvT_Introducing_Convolutions_to_Vision_Transformers_ICCV_2021_paper.pdf" target="_blank" rel="noopener">CvT</a>, and
-          <a href="https://github.com/microsoft/human-pose-estimation.pytorch" target="_blank" rel="noopener">Simple Baselines for Human Pose Estimation</a>.
+        <ul class="focus-list">
+          <li class="focus-item"><strong>Multimodal foundation models.</strong> Unified vision-language representations for captioning, OCR, grounding, and document understanding.</li>
+          <li class="focus-item"><strong>Reasoning and agentic systems.</strong> Post-training for reasoning, coding, tool use, and multi-step task completion.</li>
+          <li class="focus-item"><strong>Efficient models.</strong> Compact multimodal models for low-latency and resource-constrained settings.</li>
+          <li class="focus-item"><strong>Visual representation learning.</strong> High-resolution networks, convolutional vision transformers, and human pose estimation.</li>
+        </ul>
+      </section>
+
+      <section class="section" id="work" aria-labelledby="work-title">
+        <div class="section-header">
+          <h2 id="work-title">Selected publications &amp; reports</h2>
+        </div>
+        <p class="section-note">
+          A selection of my research.
+          <a href="https://scholar.google.com/citations?view_op=list_works&amp;hl=en&amp;user=t5HZdzoAAAAJ" target="_blank" rel="noopener">Full publication list on Google Scholar</a>.
+        </p>
+
+        <h3 class="section-label" id="publications-title">Peer-reviewed publications</h3>
+        <ul class="pub-list" aria-labelledby="publications-title">
+          <li class="pub-item">
+            <h4 class="pub-title"><a href="https://openaccess.thecvf.com/content/CVPR2024/html/Xiao_Florence-2_Advancing_a_Unified_Representation_for_a_Variety_of_Vision_CVPR_2024_paper.html" target="_blank" rel="noopener">Florence-2: Advancing a Unified Representation for a Variety of Vision Tasks</a></h4>
+            <p class="pub-authors"><strong>Bin Xiao</strong>, Haiping Wu, Weijian Xu, Xiyang Dai, Houdong Hu, Yumao Lu, Michael Zeng, Ce Liu, Lu Yuan</p>
+            <p class="pub-meta"><span class="pub-badge">CVPR 2024</span><span>Oral presentation</span></p>
+            <p class="pub-desc">A prompt-based sequence-to-sequence model for captioning, object detection, grounding, and segmentation.</p>
+            <div class="pub-resources">
+              <div class="pub-links">
+                <a class="pub-link" href="https://arxiv.org/pdf/2311.06242.pdf" target="_blank" rel="noopener">Paper</a>
+                <a class="pub-link" href="https://huggingface.co/microsoft/Florence-2-large" target="_blank" rel="noopener">Model</a>
+              </div>
+              <details class="citation">
+                <summary>BibTeX</summary>
+                <pre><code>@InProceedings{Xiao_2024_CVPR,
+  author = {Xiao, Bin and Wu, Haiping and Xu, Weijian and Dai, Xiyang and Hu, Houdong and Lu, Yumao and Zeng, Michael and Liu, Ce and Yuan, Lu},
+  title = {Florence-2: Advancing a Unified Representation for a Variety of Vision Tasks},
+  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year = {2024},
+  pages = {4818-4829}
+}</code></pre>
+              </details>
+            </div>
+          </li>
+
+          <li class="pub-item">
+            <h4 class="pub-title"><a href="https://openaccess.thecvf.com/content/ICCV2021/html/Wu_CvT_Introducing_Convolutions_to_Vision_Transformers_ICCV_2021_paper.html" target="_blank" rel="noopener">CvT: Introducing Convolutions to Vision Transformers</a></h4>
+            <p class="pub-authors">Haiping Wu, <strong>Bin Xiao</strong>, Noel Codella, Mengchen Liu, Xiyang Dai, Lu Yuan, Lei Zhang</p>
+            <p class="pub-meta"><span class="pub-badge">ICCV 2021</span></p>
+            <p class="pub-desc">Convolutional token embeddings and projections introduce spatial inductive biases into a hierarchical vision transformer.</p>
+            <div class="pub-resources">
+              <div class="pub-links">
+                <a class="pub-link" href="https://openaccess.thecvf.com/content/ICCV2021/papers/Wu_CvT_Introducing_Convolutions_to_Vision_Transformers_ICCV_2021_paper.pdf" target="_blank" rel="noopener">Paper</a>
+                <a class="pub-link" href="https://github.com/microsoft/CvT" target="_blank" rel="noopener">Code</a>
+              </div>
+              <details class="citation">
+                <summary>BibTeX</summary>
+                <pre><code>@InProceedings{Wu_2021_ICCV,
+  author = {Wu, Haiping and Xiao, Bin and Codella, Noel and Liu, Mengchen and Dai, Xiyang and Yuan, Lu and Zhang, Lei},
+  title = {CvT: Introducing Convolutions to Vision Transformers},
+  booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+  year = {2021},
+  pages = {22-31}
+}</code></pre>
+              </details>
+            </div>
+          </li>
+
+          <li class="pub-item">
+            <h4 class="pub-title"><a href="https://openaccess.thecvf.com/content_CVPR_2019/html/Sun_Deep_High-Resolution_Representation_Learning_for_Human_Pose_Estimation_CVPR_2019_paper.html" target="_blank" rel="noopener">Deep High-Resolution Representation Learning for Human Pose Estimation</a></h4>
+            <p class="pub-authors">Ke Sun, <strong>Bin Xiao</strong>, Dong Liu, Jingdong Wang</p>
+            <p class="pub-meta"><span class="pub-badge">CVPR 2019</span></p>
+            <p class="pub-desc">HRNet maintains high-resolution representations throughout the network through parallel multi-resolution branches and repeated feature fusion.</p>
+            <div class="pub-resources">
+              <div class="pub-links">
+                <a class="pub-link" href="https://openaccess.thecvf.com/content_CVPR_2019/papers/Sun_Deep_High-Resolution_Representation_Learning_for_Human_Pose_Estimation_CVPR_2019_paper.pdf" target="_blank" rel="noopener">Paper</a>
+                <a class="pub-link" href="https://github.com/leoxiaobin/deep-high-resolution-net.pytorch" target="_blank" rel="noopener">Code</a>
+              </div>
+              <details class="citation">
+                <summary>BibTeX</summary>
+                <pre><code>@InProceedings{Sun_2019_CVPR,
+  author = {Sun, Ke and Xiao, Bin and Liu, Dong and Wang, Jingdong},
+  title = {Deep High-Resolution Representation Learning for Human Pose Estimation},
+  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year = {2019},
+  pages = {5693-5703}
+}</code></pre>
+              </details>
+            </div>
+          </li>
+
+          <li class="pub-item">
+            <h4 class="pub-title"><a href="https://openaccess.thecvf.com/content_ECCV_2018/html/Bin_Xiao_Simple_Baselines_for_ECCV_2018_paper.html" target="_blank" rel="noopener">Simple Baselines for Human Pose Estimation and Tracking</a></h4>
+            <p class="pub-authors"><strong>Bin Xiao</strong>, Haiping Wu, Yichen Wei</p>
+            <p class="pub-meta"><span class="pub-badge">ECCV 2018</span></p>
+            <p class="pub-desc">Simple baseline methods for human pose estimation and tracking, using a deconvolutional head for keypoint prediction.</p>
+            <div class="pub-resources">
+              <div class="pub-links">
+                <a class="pub-link" href="https://openaccess.thecvf.com/content_ECCV_2018/papers/Bin_Xiao_Simple_Baselines_for_ECCV_2018_paper.pdf" target="_blank" rel="noopener">Paper</a>
+                <a class="pub-link" href="https://github.com/microsoft/human-pose-estimation.pytorch" target="_blank" rel="noopener">Code</a>
+              </div>
+              <details class="citation">
+                <summary>BibTeX</summary>
+                <pre><code>@InProceedings{Xiao_2018_ECCV,
+  author = {Xiao, Bin and Wu, Haiping and Wei, Yichen},
+  title = {Simple Baselines for Human Pose Estimation and Tracking},
+  booktitle = {Proceedings of the European Conference on Computer Vision (ECCV)},
+  year = {2018},
+  pages = {466-481}
+}</code></pre>
+              </details>
+            </div>
+          </li>
+        </ul>
+
+        <h3 class="section-label" id="reports-title">Technical reports &amp; model releases</h3>
+        <ul class="pub-list" aria-labelledby="reports-title">
+          <li class="pub-item">
+            <h4 class="pub-title"><a href="https://microsoft.ai/news/introducing-mai-thinking-1/" target="_blank" rel="noopener">MAI-Thinking-1 and MAI-Code-1-Flash</a></h4>
+            <p class="pub-meta"><span>2026 · Microsoft AI</span><span>Technical report &amp; model releases</span></p>
+            <p class="pub-desc">Reasoning and coding models for mathematical reasoning, software engineering, and tool-based coding workflows.</p>
+            <div class="pub-resources">
+              <a class="pub-link" href="https://microsoft.ai/news/introducing-mai-thinking-1/" target="_blank" rel="noopener">MAI-Thinking-1</a>
+              <a class="pub-link" href="https://microsoft.ai/news/introducingmai-code-1-flash/" target="_blank" rel="noopener">MAI-Code-1-Flash</a>
+              <a class="pub-link" href="https://microsoft.ai/wp-content/uploads/2026/06/main_20260602_2.pdf" target="_blank" rel="noopener">Technical report</a>
+            </div>
+          </li>
+          <li class="pub-item">
+            <h4 class="pub-title"><a href="https://huggingface.co/microsoft/Phi-3-vision-128k-instruct" target="_blank" rel="noopener">Phi-3 Vision / Phi-3.5 Vision</a></h4>
+            <p class="pub-meta"><span>2024 · Microsoft</span><span>Model releases</span></p>
+            <p class="pub-desc">Compact vision-language models for image understanding, visual reasoning, OCR, and document understanding.</p>
+            <div class="pub-resources">
+              <a class="pub-link" href="https://arxiv.org/abs/2404.14219" target="_blank" rel="noopener">Phi-3 report</a>
+              <a class="pub-link" href="https://huggingface.co/microsoft/Phi-3-vision-128k-instruct" target="_blank" rel="noopener">Phi-3 model</a>
+              <a class="pub-link" href="https://huggingface.co/microsoft/Phi-3.5-vision-instruct" target="_blank" rel="noopener">Phi-3.5 model</a>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="section" id="trajectory" aria-labelledby="trajectory-title">
+        <div class="section-header">
+          <h2 id="trajectory-title">Research background</h2>
+        </div>
+        <ol class="trajectory-list" reversed>
+          <li class="trajectory-item">
+            <span class="trajectory-year">2025 – present</span>
+            <p>Post-training for reasoning, coding, and agentic models, including planning and tool use.</p>
+          </li>
+          <li class="trajectory-item">
+            <span class="trajectory-year">2024 – 2025</span>
+            <p>Multimodal Llama post-training for visual understanding.</p>
+          </li>
+          <li class="trajectory-item">
+            <span class="trajectory-year">2024</span>
+            <p>Led <a href="https://huggingface.co/microsoft/Phi-3-vision-128k-instruct" target="_blank" rel="noopener">Phi-3 Vision</a> and <a href="https://huggingface.co/microsoft/Phi-3.5-vision-instruct" target="_blank" rel="noopener">Phi-3.5 Vision</a>, compact multimodal language models.</p>
+          </li>
+          <li class="trajectory-item">
+            <span class="trajectory-year">2020 – 2023</span>
+            <p>Led the <a href="https://arxiv.org/pdf/2111.11432" target="_blank" rel="noopener">Florence-1</a> and <a href="https://huggingface.co/collections/microsoft/florence-6669f44df0d87d9c3bfb76de" target="_blank" rel="noopener">Florence-2</a> vision foundation models.</p>
+          </li>
+          <li class="trajectory-item">
+            <span class="trajectory-year">2018 – 2021</span>
+            <p>Developed visual representations and pose estimation methods in <a href="https://github.com/microsoft/CvT" target="_blank" rel="noopener">CvT</a>, <a href="https://github.com/HRNet" target="_blank" rel="noopener">HRNet</a>, and <a href="https://github.com/microsoft/human-pose-estimation.pytorch" target="_blank" rel="noopener">Simple Baselines</a>.</p>
+          </li>
+        </ol>
+      </section>
+
+      <section class="section" id="recognition" aria-labelledby="recognition-title">
+        <div class="section-header">
+          <h2 id="recognition-title">Recognition</h2>
+        </div>
+        <p class="section-note">Selected challenge results.</p>
+        <ul class="recognition-list">
+          <li class="recognition-item">
+            <span class="recognition-year">2019</span>
+            <p><strong>1st place</strong>, Look into Person Challenge, Single-Person Pose Estimation.</p>
+          </li>
+          <li class="recognition-item">
+            <span class="recognition-year">2019</span>
+            <p><strong>2nd place</strong>, Object365 Challenge, Full track.</p>
+          </li>
+          <li class="recognition-item">
+            <span class="recognition-year">2018</span>
+            <p><strong>1st place</strong>, PoseTrack Multi-Person Pose Tracking Challenge.</p>
+          </li>
+          <li class="recognition-item">
+            <span class="recognition-year">2018</span>
+            <p><strong>2nd place</strong>, COCO Keypoint Detection Challenge.</p>
+          </li>
+        </ul>
+        <p class="section-note recognition-note">
+          Citation-based recognition:
+          <a href="https://www.paperdigest.org/2026/03/most-influential-cvpr-papers-2026-03-version/" target="_blank" rel="noopener">HRNet (CVPR 2019)</a>,
+          <a href="https://www.paperdigest.org/2026/03/most-influential-iccv-papers-2026-03-version/" target="_blank" rel="noopener">CvT (ICCV 2021)</a>, and
+          <a href="https://www.paperdigest.org/2026/03/most-influential-eccv-papers-2026-03-version/" target="_blank" rel="noopener">Simple Baselines (ECCV 2018)</a>
+          appear in Paper Digest's most-influential-paper lists (March 2026).
         </p>
       </section>
 
-    <!-- Research Focus -->
-    <section class="section" id="focus">
-      <div class="section-header reveal">
-        <h2>Research Focus</h2>
-      </div>
-
-      <ul class="focus-list reveal-stagger">
-        <li class="focus-item">
-          <span class="focus-title">Multimodal foundation models</span>
-          <span class="focus-desc">Building general-purpose vision-language models for OCR, grounding, captioning, dense prediction, and document/image understanding.</span>
-        </li>
-        <li class="focus-item">
-          <span class="focus-title">Agentic and reasoning systems</span>
-          <span class="focus-desc">Post-training models for tool use, coding, reasoning, and real-world task completion.</span>
-        </li>
-        <li class="focus-item">
-          <span class="focus-title">Efficient and deployable AI</span>
-          <span class="focus-desc">Designing compact and practical models that can run in real-world product settings, including low-latency and resource-constrained scenarios.</span>
-        </li>
-        <li class="focus-item">
-          <span class="focus-title">Vision representation learning</span>
-          <span class="focus-desc">From high-resolution CNNs to convolutional vision transformers to unified multimodal representations.</span>
-        </li>
-      </ul>
-    </section>
-
-    <!-- Selected Work -->
-    <section class="section" id="work">
-      <div class="section-header reveal">
-        <h2>Selected Work</h2>
-        <span class="section-counter">6 selected works</span>
-      </div>
-
-      <ol class="pub-list reveal-stagger" reversed>
-
-        <li class="pub-item">
-          <span class="pub-num">06</span>
-          <div>
-            <p class="pub-meta">2026 · Microsoft AI Blog / Tech Report<span class="pub-badge">Reasoning Model</span><span class="pub-badge">Coding Model</span><span class="pub-badge">Agentic AI</span></p>
-            <h3 class="pub-title"><a href="https://microsoft.ai/news/introducing-mai-thinking-1/" target="_blank" rel="noopener">MAI-Thinking-1 and MAI-Code-1-Flash</a></h3>
-            <p class="pub-desc">Microsoft AI reasoning and coding models for agentic workflows: MAI-Thinking-1 focuses on software engineering and mathematical reasoning, while MAI-Code-1-Flash is optimized for production GitHub Copilot coding workflows and efficient reasoning per token.</p>
-            <div class="pub-links">
-              <a class="pub-link" href="https://microsoft.ai/news/introducing-mai-thinking-1/" target="_blank" rel="noopener">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-                MAI-Thinking-1
-              </a>
-              <a class="pub-link" href="https://microsoft.ai/news/introducingmai-code-1-flash/" target="_blank" rel="noopener">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-                MAI-Code-1-Flash
-              </a>
-              <a class="pub-link" href="https://microsoft.ai/wp-content/uploads/2026/06/main_20260602_2.pdf" target="_blank" rel="noopener">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-                Tech Report
-              </a>
-            </div>
-          </div>
-        </li>
-
-        <li class="pub-item">
-          <span class="pub-num">05</span>
-          <div>
-            <p class="pub-meta">2024 · Technical Report<span class="pub-badge">Multimodal LLM</span></p>
-            <h3 class="pub-title"><a href="https://arxiv.org/abs/2404.14219" target="_blank" rel="noopener">Phi-3 Vision / Phi-3.5 Vision</a></h3>
-            <p class="pub-desc">Compact multimodal language models for visual reasoning and OCR-centric understanding, exploring how strong multimodal capability can be delivered in resource-constrained settings.</p>
-            <div class="pub-links">
-              <a class="pub-link" href="https://arxiv.org/abs/2404.14219" target="_blank" rel="noopener">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-                Paper
-              </a>
-              <a class="pub-link" href="https://huggingface.co/microsoft/Phi-3-vision-128k-instruct" target="_blank" rel="noopener">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-                Model
-              </a>
-            </div>
-          </div>
-        </li>
-
-        <li class="pub-item">
-          <span class="pub-num">04</span>
-          <div>
-            <p class="pub-meta">2024 · CVPR<span class="pub-badge">Oral</span><span class="pub-badge">Widely adopted on Hugging Face</span></p>
-            <h3 class="pub-title"><a href="https://arxiv.org/pdf/2311.06242.pdf" target="_blank" rel="noopener">Florence-2: Advancing a Unified Representation for a Variety of Vision Tasks</a></h3>
-            <p class="pub-desc">A unified prompt-based vision foundation model spanning captioning, OCR, grounding, and segmentation — one architecture handling many vision tasks through a single sequence-to-sequence formulation.</p>
-            <div class="pub-links">
-              <a class="pub-link" href="https://arxiv.org/pdf/2311.06242.pdf" target="_blank" rel="noopener">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-                Paper
-              </a>
-              <a class="pub-link" href="https://huggingface.co/microsoft/Florence-2-large" target="_blank" rel="noopener">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-                Model
-              </a>
-            </div>
-          </div>
-        </li>
-
-        <li class="pub-item">
-          <span class="pub-num">03</span>
-          <div>
-            <p class="pub-meta">ICCV 2021<span class="pub-badge">3,000+ citations</span><a class="pub-badge" href="https://www.paperdigest.org/2026/03/most-influential-iccv-papers-2026-03-version/" target="_blank" rel="noopener">Most cited ICCV 2021</a></p>
-            <h3 class="pub-title"><a href="https://openaccess.thecvf.com/content/ICCV2021/papers/Wu_CvT_Introducing_Convolutions_to_Vision_Transformers_ICCV_2021_paper.pdf" target="_blank" rel="noopener">CvT: Introducing Convolutions to Vision Transformers</a></h3>
-            <p class="pub-desc">Introduced convolutional inductive biases into vision transformers for efficient visual recognition — bridging the strengths of CNNs and transformers in a single architecture.</p>
-            <div class="pub-links">
-              <a class="pub-link" href="https://openaccess.thecvf.com/content/ICCV2021/papers/Wu_CvT_Introducing_Convolutions_to_Vision_Transformers_ICCV_2021_paper.pdf" target="_blank" rel="noopener">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-                Paper
-              </a>
-              <a class="pub-link" href="https://github.com/microsoft/CvT" target="_blank" rel="noopener">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-                Code
-              </a>
-            </div>
-          </div>
-        </li>
-
-        <li class="pub-item">
-          <span class="pub-num">02</span>
-          <div>
-            <p class="pub-meta">CVPR 2019<span class="pub-badge">7,000+ citations</span><a class="pub-badge" href="https://www.paperdigest.org/2026/03/most-influential-cvpr-papers-2026-03-version/" target="_blank" rel="noopener">Most cited CVPR 2019</a></p>
-            <h3 class="pub-title"><a href="https://openaccess.thecvf.com/content_CVPR_2019/papers/Sun_Deep_High-Resolution_Representation_Learning_for_Human_Pose_Estimation_CVPR_2019_paper.pdf" target="_blank" rel="noopener">Deep High-Resolution Representation Learning for Human Pose Estimation</a></h3>
-            <p class="pub-desc">Maintained high-resolution representations throughout the network, becoming a durable architecture family for pose estimation and dense visual recognition.</p>
-            <div class="pub-links">
-              <a class="pub-link" href="https://openaccess.thecvf.com/content_CVPR_2019/papers/Sun_Deep_High-Resolution_Representation_Learning_for_Human_Pose_Estimation_CVPR_2019_paper.pdf" target="_blank" rel="noopener">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-                Paper
-              </a>
-              <a class="pub-link" href="https://github.com/leoxiaobin/deep-high-resolution-net.pytorch" target="_blank" rel="noopener">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-                Code
-              </a>
-            </div>
-          </div>
-        </li>
-
-        <li class="pub-item">
-          <span class="pub-num">01</span>
-          <div>
-            <p class="pub-meta">ECCV 2018<span class="pub-badge">2,900+ citations</span><a class="pub-badge" href="https://www.paperdigest.org/2026/03/most-influential-eccv-papers-2026-03-version/" target="_blank" rel="noopener">Most cited ECCV 2018</a></p>
-            <h3 class="pub-title"><a href="http://openaccess.thecvf.com/content_ECCV_2018/papers/Bin_Xiao_Simple_Baselines_for_ECCV_2018_paper.pdf" target="_blank" rel="noopener">Simple Baselines for Human Pose Estimation and Tracking</a></h3>
-            <p class="pub-desc">Showed that a simple, carefully designed deconvolutional head could deliver strong human pose estimation performance — becoming a durable reference baseline for the field.</p>
-            <div class="pub-links">
-              <a class="pub-link" href="http://openaccess.thecvf.com/content_ECCV_2018/papers/Bin_Xiao_Simple_Baselines_for_ECCV_2018_paper.pdf" target="_blank" rel="noopener">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-                Paper
-              </a>
-              <a class="pub-link" href="https://github.com/microsoft/human-pose-estimation.pytorch" target="_blank" rel="noopener">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-                Code
-              </a>
-            </div>
-          </div>
-        </li>
-
-      </ol>
-    </section>
-
-    <!-- Research Trajectory -->
-    <section class="section" id="trajectory">
-      <div class="section-header reveal">
-        <h2>Research Trajectory</h2>
-        <span class="section-counter">2018 – present</span>
-      </div>
-
-      <ol class="trajectory-list reveal-stagger" reversed>
-        <li class="trajectory-item">
-          <span class="trajectory-year">2025 – present</span>
-          <p class="trajectory-desc">Reasoning, coding, and agentic model post-training — building models that can plan, use tools, and complete real-world tasks.</p>
-        </li>
-        <li class="trajectory-item">
-          <span class="trajectory-year">2024 – 2025</span>
-          <p class="trajectory-desc">Multimodal Llama post-training — extending large language models with visual understanding capabilities.</p>
-        </li>
-        <li class="trajectory-item">
-          <span class="trajectory-year">2024</span>
-          <p class="trajectory-desc">
-            Led <a href="https://huggingface.co/microsoft/Phi-3-vision-128k-instruct" target="_blank" rel="noopener">Phi-3 Vision</a>
-            and <a href="https://huggingface.co/microsoft/Phi-3.5-vision-instruct" target="_blank" rel="noopener">Phi-3.5 Vision</a> — compact multimodal LLMs that brought strong visual reasoning to resource-constrained settings.
-          </p>
-        </li>
-        <li class="trajectory-item">
-          <span class="trajectory-year">2020 – 2023</span>
-          <p class="trajectory-desc">
-            Led the
-            <a href="https://arxiv.org/pdf/2111.11432" target="_blank" rel="noopener">Florence-1</a>
-            and <a href="https://arxiv.org/pdf/2311.06242.pdf" target="_blank" rel="noopener">Florence-2</a> vision foundation models — unifying captioning, OCR, grounding, and segmentation in a single sequence-to-sequence architecture.
-          </p>
-        </li>
-        <li class="trajectory-item">
-          <span class="trajectory-year">2018 – 2021</span>
-          <p class="trajectory-desc">
-            Built durable vision architectures and baselines:
-            <a href="https://openaccess.thecvf.com/content/ICCV2021/papers/Wu_CvT_Introducing_Convolutions_to_Vision_Transformers_ICCV_2021_paper.pdf" target="_blank" rel="noopener">CvT</a> (convolutional vision transformers),
-            <a href="https://arxiv.org/pdf/1908.07919" target="_blank" rel="noopener">HRNet</a> (high-resolution representations), and
-            <a href="http://openaccess.thecvf.com/content_ECCV_2018/papers/Bin_Xiao_Simple_Baselines_for_ECCV_2018_paper.pdf" target="_blank" rel="noopener">SimpleBaseline</a> (pose estimation reference).
-          </p>
-        </li>
-      </ol>
-    </section>
-
-    <!-- Recognition -->
-    <section class="section" id="recognition">
-      <div class="section-header reveal">
-        <h2>Recognition</h2>
-      </div>
-
-      <ul class="recognition-list reveal-stagger">
-        <li class="recognition-item">
-          <span class="recognition-dot" aria-hidden="true"></span>
-          <span><a href="https://arxiv.org/abs/1902.09212">HRNet</a>, <a href="https://arxiv.org/abs/2103.15808">CvT</a>, and <a href="https://arxiv.org/abs/1804.06208">SimpleBaseline</a> — among the most cited papers at <a href="https://www.paperdigest.org/2026/03/most-influential-cvpr-papers-2026-03-version/">CVPR 2019</a>, <a href="https://www.paperdigest.org/2026/03/most-influential-iccv-papers-2026-03-version/">ICCV 2021</a>, and <a href="https://www.paperdigest.org/2026/03/most-influential-eccv-papers-2026-03-version/">ECCV 2018</a>, with <strong>12,000+ combined citations</strong> (as of 2026).</span>
-        </li>
-        <li class="recognition-item">
-          <span class="recognition-dot" aria-hidden="true"></span>
-          <span><strong>1st place</strong> — Look into Person Challenge 2019, Single-Person Pose Estimation.</span>
-        </li>
-        <li class="recognition-item">
-          <span class="recognition-dot" aria-hidden="true"></span>
-          <span><strong>1st place</strong> — PoseTrack Multi-Person Pose Tracking Challenge 2018.</span>
-        </li>
-        <li class="recognition-item">
-          <span class="recognition-dot" aria-hidden="true"></span>
-          <span><strong>2nd place</strong> — COCO Keypoint Detection Challenge 2018.</span>
-        </li>
-        <li class="recognition-item">
-          <span class="recognition-dot" aria-hidden="true"></span>
-          <span><strong>2nd place</strong> — Object365 Challenge 2019, Full track.</span>
-        </li>
-      </ul>
-    </section>
-
-    <!-- Contact -->
-    <section class="section" id="contact">
-      <div class="section-header reveal">
-        <h2>Contact</h2>
-      </div>
-
-      <div class="contact-rows reveal-stagger">
-        <div class="contact-row">
-          <span class="contact-label">Scholar</span>
-          <div class="contact-val">
-            <a href="https://scholar.google.com/citations?user=t5HZdzoAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar →</a>
-          </div>
+      <section class="section" id="contact" aria-labelledby="contact-title">
+        <div class="section-header">
+          <h2 id="contact-title">Contact &amp; profiles</h2>
         </div>
-        <div class="contact-row">
-          <span class="contact-label">GitHub</span>
-          <div class="contact-val">
-            <a href="https://github.com/leoxiaobin" target="_blank" rel="noopener">github.com/leoxiaobin →</a>
+        <p class="section-note">For professional correspondence, please connect via <a href="https://www.linkedin.com/in/leobinxiao" target="_blank" rel="noopener">LinkedIn</a>.</p>
+        <dl class="contact-rows">
+          <div class="contact-row">
+            <dt class="contact-label">Scholar</dt>
+            <dd class="contact-val"><a href="https://scholar.google.com/citations?user=t5HZdzoAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></dd>
           </div>
-        </div>
-        <div class="contact-row">
-          <span class="contact-label">ORCID</span>
-          <div class="contact-val">
-            <a href="https://orcid.org/0000-0001-6477-5911" target="_blank" rel="noopener">0000-0001-6477-5911 →</a>
+          <div class="contact-row">
+            <dt class="contact-label">ORCID</dt>
+            <dd class="contact-val"><a href="https://orcid.org/0000-0001-6477-5911" target="_blank" rel="noopener">0000-0001-6477-5911</a></dd>
           </div>
-        </div>
-        <div class="contact-row">
-          <span class="contact-label">LinkedIn</span>
-          <div class="contact-val">
-            <a href="https://www.linkedin.com/in/leobinxiao" target="_blank" rel="noopener">LinkedIn →</a>
+          <div class="contact-row">
+            <dt class="contact-label">GitHub</dt>
+            <dd class="contact-val"><a href="https://github.com/leoxiaobin" target="_blank" rel="noopener">github.com/leoxiaobin</a></dd>
           </div>
-        </div>
-        <div class="contact-row">
-          <span class="contact-label">Hugging Face</span>
-          <div class="contact-val">
-            <a href="https://huggingface.co/leoxiaobin" target="_blank" rel="noopener">huggingface.co/leoxiaobin →</a>
+          <div class="contact-row">
+            <dt class="contact-label">Hugging Face</dt>
+            <dd class="contact-val"><a href="https://huggingface.co/leoxiaobin" target="_blank" rel="noopener">huggingface.co/leoxiaobin</a></dd>
           </div>
-        </div>
-        <div class="contact-row">
-          <span class="contact-label">Location</span>
-          <div class="contact-val">Microsoft Superintelligence Team · Redmond, WA</div>
-        </div>
-      </div>
-    </section>
+          <div class="contact-row">
+            <dt class="contact-label">LinkedIn</dt>
+            <dd class="contact-val"><a href="https://www.linkedin.com/in/leobinxiao" target="_blank" rel="noopener">linkedin.com/in/leobinxiao</a></dd>
+          </div>
+          <div class="contact-row">
+            <dt class="contact-label">Location</dt>
+            <dd class="contact-val">Microsoft Superintelligence Team · Redmond, WA</dd>
+          </div>
+        </dl>
+      </section>
 
-    <footer class="footer">
-      <span>© 2026 Bin Xiao</span>
-      <span>
-        <a href="https://scholar.google.com/citations?user=t5HZdzoAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a> ·
-        <a href="https://github.com/leoxiaobin" target="_blank" rel="noopener">GitHub</a> ·
-        <a href="https://www.linkedin.com/in/leobinxiao" target="_blank" rel="noopener">LinkedIn</a>
-      </span>
-    </footer>
-
-  </main>
-</div>
-
-<script>
-  function toggleSidebar() {
-    document.getElementById('sidebar').classList.toggle('open');
-    document.getElementById('overlay').classList.toggle('active');
-  }
-  function closeSidebar() {
-    document.getElementById('sidebar').classList.remove('open');
-    document.getElementById('overlay').classList.remove('active');
-  }
-
-  // Scroll reveal
-  const revealObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-        revealObserver.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.06, rootMargin: '0px 0px -50px 0px' });
-
-  document.querySelectorAll('.reveal, .reveal-stagger').forEach(el => revealObserver.observe(el));
-
-  // Active nav highlighting
-  const sections = document.querySelectorAll('.section');
-  const navLinks = document.querySelectorAll('.sidebar-nav a');
-
-  const navObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        navLinks.forEach(l => l.classList.remove('active'));
-        const id = entry.target.getAttribute('id');
-        const link = document.querySelector(`.sidebar-nav a[href="#${id}"]`);
-        if (link) link.classList.add('active');
-      }
-    });
-  }, { rootMargin: '-20% 0px -70% 0px' });
-
-  sections.forEach(s => navObserver.observe(s));
-  navLinks.forEach(l => l.addEventListener('click', closeSidebar));
-</script>
-
+      <footer class="footer">© 2026 Bin Xiao</footer>
+    </main>
+  </div>
 </body>
 </html>
